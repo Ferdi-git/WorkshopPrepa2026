@@ -201,11 +201,11 @@ MonoBehaviour:
   cameraLookerTransform: {fileID: 3002493013109424494}
   moving: 0
   readyToRun: 0
-  unlockedSprint: 1
-  unlockedDash: 1
+  unlockedSprint: 0
+  unlockedDash: 0
   dashed: 0
   canDash: 1
-  numberOfAirJump: 1
+  numberOfAirJump: 0
   currentNumberOfAirJump: 0
   currentSpeed: 0
   baseSpeed: 4
