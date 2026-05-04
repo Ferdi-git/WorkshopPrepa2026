@@ -42,6 +42,7 @@ public class PlayerInteractor : MonoBehaviour
         if (Physics.Raycast(ray, out hit, selectionDistance))
         {
             objectSelected = hit.collider.GetComponent<InteractiveObject>();
+            if(objectSelected != null && objectSelected.interactions.Length == 0) objectSelected = null;
         }
         else
         {
@@ -89,11 +90,14 @@ public class PlayerInteractor : MonoBehaviour
 
         }
 
-        objectInteracting.interactionID = interaction.nextInteractionID;
-        if(objectInteracting.interactionID == interaction.nextInteractionID)
+
+        if (objectInteracting.interactionID == interaction.nextInteractionID)
         {
             interaction.playNextInteractionInstantly = false;
         }
+
+        objectInteracting.interactionID = interaction.nextInteractionID;
+
 
         CursorController.Instance.InteractAnim();
 
