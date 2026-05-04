@@ -205,7 +205,7 @@ MonoBehaviour:
   unlockedDash: 0
   dashed: 0
   canDash: 1
-  numberOfAirJump: 1
+  numberOfAirJump: 0
   currentNumberOfAirJump: 0
   currentSpeed: 0
   baseSpeed: 4
