@@ -201,8 +201,8 @@ MonoBehaviour:
   cameraLookerTransform: {fileID: 3002493013109424494}
   moving: 0
   readyToRun: 0
-  unlockedSprint: 0
-  unlockedDash: 0
+  unlockedSprint: 1
+  unlockedDash: 1
   dashed: 0
   canDash: 1
   numberOfAirJump: 0
@@ -212,8 +212,8 @@ MonoBehaviour:
   crouchspeed: 2
   acc: 0.05
   runForce: 2.6
-  dashForce: 100
-  dashCooldown: 0.3
+  dashForce: 40
+  dashCooldown: 0.5
   botRayHeight: 0.1
   botRaySize: 0.2
   botRayOffset: 0.24

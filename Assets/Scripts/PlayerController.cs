@@ -67,9 +67,11 @@ public class PlayerController : MonoBehaviour
     public bool running;
     public bool applyingRunForce;
     public bool isCrouching = false;
+    private CapsuleCollider playerCollider;
 
     private void Start()
     {
+        playerCollider = GetComponent<CapsuleCollider>();
         currentSpeed = baseSpeed;
         currentNumberOfAirJump = numberOfAirJump;
     }
@@ -163,7 +165,7 @@ public class PlayerController : MonoBehaviour
             
         }
 
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.CapsLock))
         {
             if (isCrouching == false) StartCrouching();
             isCrouching = true;
@@ -180,7 +182,7 @@ public class PlayerController : MonoBehaviour
         {
             if (running) StopRunning();
 
-            if(Input.GetKey(KeyCode.LeftShift))
+            if(Input.GetKey(KeyCode.LeftShift) && unlockedSprint)
             {
                 readyToRun = true;
             }
@@ -199,17 +201,21 @@ public class PlayerController : MonoBehaviour
     void StartCrouching()
     {
         currentSpeed = crouchspeed;
-        CameraLooker.position = new Vector3(CameraLooker.position.x, 0.5f, CameraLooker.position.z);
+        playerCollider.height = 1.5f;
+        playerCollider.center = new Vector3(playerCollider.center.x , 0.75f , playerCollider.center.z);
+        CameraLooker.localPosition = new Vector3(CameraLooker.localPosition.x, 0.5f, CameraLooker.localPosition.z);
     }
 
     void StopCrouching()
     {
         currentSpeed = baseSpeed;
-        CameraLooker.position = new Vector3(CameraLooker.position.x, 1.5f, CameraLooker.position.z);
+        playerCollider.height = 2f;
+        playerCollider.center = new Vector3(playerCollider.center.x, 1, playerCollider.center.z);
+        CameraLooker.localPosition = new Vector3(CameraLooker.localPosition.x, 1.5f, CameraLooker.localPosition.z);
     }
 
     void StartRunning()
-    {
+    { 
         readyToRun = false;
         running = true;
 
