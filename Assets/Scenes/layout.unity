@@ -927,6 +927,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundName: Boop
+--- !u!1 &253428862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 253428863}
+  - component: {fileID: 253428864}
+  m_Layer: 0
+  m_Name: TP POINT 8
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &253428863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253428862}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.414, y: 1.34, z: 8.813}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1143217445}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &253428864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253428862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46147955e10b8a143ac63af4983994b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
+  objectName: TP POINT 8
+  interactionID: 0
+  interactions: []
+  goAwayAtStart: 0
 --- !u!1 &290037534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,6 +1509,159 @@ Transform:
   - {fileID: 977124410}
   m_Father: {fileID: 1603935266}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &357577727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 357577728}
+  - component: {fileID: 357577732}
+  - component: {fileID: 357577731}
+  - component: {fileID: 357577730}
+  - component: {fileID: 357577729}
+  m_Layer: 0
+  m_Name: INTERACTIVEOBJECT_Crouch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &357577728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357577727}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -28.2417, y: 0.7628, z: 65.3582}
+  m_LocalScale: {x: 0.7354, y: 0.7236, z: 0.7516}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1826214430}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &357577729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357577727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46147955e10b8a143ac63af4983994b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
+  objectName: Crouch
+  interactionID: 0
+  interactions:
+  - requiredObject: 
+    type: 10
+    stringArg: Crouch
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 9
+    stringArg: TP POINT 8
+    length: 0
+    nextInteractionID: 1
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 4
+    stringArg: Rdoor4
+    length: 0
+    nextInteractionID: 2
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: Rdoor3
+    length: 0
+    nextInteractionID: 3
+    playNextInteractionInstantly: 0
+  goAwayAtStart: 0
+--- !u!65 &357577730
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357577727}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &357577731
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357577727}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5a80f2dbf68b35742a918c8eb4ab5c34, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &357577732
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357577727}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &376736755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,7 +1766,7 @@ GameObject:
   - component: {fileID: 400002776}
   - component: {fileID: 400002775}
   m_Layer: 0
-  m_Name: Double Jump
+  m_Name: INTERACTIVEOBJECT_Double Jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1623,14 +1824,8 @@ MonoBehaviour:
     type: 9
     stringArg: TP POINT 6
     length: 0
-    nextInteractionID: 5
-    playNextInteractionInstantly: 1
-  - requiredObject: 
-    type: 9
-    stringArg: TP POINT 6
-    length: 0
-    nextInteractionID: 5
-    playNextInteractionInstantly: 1
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
   goAwayAtStart: 0
 --- !u!65 &400002776
 BoxCollider:
@@ -2929,13 +3124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   objectName: FDoor2
   interactionID: 0
-  interactions:
-  - requiredObject: 
-    type: 9
-    stringArg: TP POINT 2
-    length: 0
-    nextInteractionID: 0
-    playNextInteractionInstantly: 0
+  interactions: []
   goAwayAtStart: 0
 --- !u!65 &584682680
 BoxCollider:
@@ -4811,7 +5000,7 @@ Transform:
   m_GameObject: {fileID: 930949138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.25, y: 0, z: 9.14}
+  m_LocalPosition: {x: 1.059, y: 1.56, z: 8.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5265,6 +5454,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   objectName: TP POINT 4
+  interactionID: 0
+  interactions: []
+  goAwayAtStart: 0
+--- !u!1 &996018742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 996018743}
+  - component: {fileID: 996018744}
+  m_Layer: 0
+  m_Name: TP POINT 7
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &996018743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996018742}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.58, y: 1.34, z: 8.08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1143217445}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &996018744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996018742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46147955e10b8a143ac63af4983994b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
+  objectName: TP POINT 7
   interactionID: 0
   interactions: []
   goAwayAtStart: 0
@@ -5937,6 +6174,8 @@ Transform:
   - {fileID: 995908749}
   - {fileID: 2091660275}
   - {fileID: 930949139}
+  - {fileID: 996018743}
+  - {fileID: 253428863}
   m_Father: {fileID: 1319568339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1166792134
@@ -6209,7 +6448,7 @@ GameObject:
   - component: {fileID: 1198027123}
   - component: {fileID: 1198027122}
   m_Layer: 0
-  m_Name: Dash
+  m_Name: INTERACTIVEOBJECT_Dash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6224,8 +6463,8 @@ Transform:
   m_GameObject: {fileID: 1198027120}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.2, y: 0, z: 64.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 44.1, y: 1.3868, z: 64.6645}
+  m_LocalScale: {x: 0.7011, y: 0.7335, z: 0.6709}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1826214430}
@@ -6249,11 +6488,23 @@ MonoBehaviour:
     type: 10
     stringArg: Dash
     length: 0
-    nextInteractionID: 0
-    playNextInteractionInstantly: 0
+    nextInteractionID: 1
+    playNextInteractionInstantly: 1
   - requiredObject: 
     type: 9
-    stringArg: Dash
+    stringArg: TP POINT 7
+    length: 0
+    nextInteractionID: 2
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: RDoor2
+    length: 0
+    nextInteractionID: 3
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 4
+    stringArg: RDoor3
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
@@ -6304,7 +6555,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5a80f2dbf68b35742a918c8eb4ab5c34, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6385,13 +6636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   objectName: FDoor4
   interactionID: 0
-  interactions:
-  - requiredObject: 
-    type: 9
-    stringArg: TP POINT 4
-    length: 0
-    nextInteractionID: 0
-    playNextInteractionInstantly: 0
+  interactions: []
   goAwayAtStart: 0
 --- !u!65 &1199361028
 BoxCollider:
@@ -7226,13 +7471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   objectName: FDoor3
   interactionID: 0
-  interactions:
-  - requiredObject: 
-    type: 9
-    stringArg: TP POINT 3
-    length: 0
-    nextInteractionID: 0
-    playNextInteractionInstantly: 0
+  interactions: []
   goAwayAtStart: 0
 --- !u!65 &1335532625
 BoxCollider:
@@ -8730,6 +8969,7 @@ Transform:
   - {fileID: 875667593}
   - {fileID: 400002774}
   - {fileID: 1198027121}
+  - {fileID: 357577728}
   m_Father: {fileID: 1319568339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1865177412
@@ -9139,13 +9379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   objectName: FDoor5
   interactionID: 0
-  interactions:
-  - requiredObject: 
-    type: 9
-    stringArg: TP POINT 5
-    length: 0
-    nextInteractionID: 0
-    playNextInteractionInstantly: 0
+  interactions: []
   goAwayAtStart: 0
 --- !u!65 &2101379232
 BoxCollider:
