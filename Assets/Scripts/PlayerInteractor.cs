@@ -164,6 +164,7 @@ public class PlayerInteractor : MonoBehaviour
                 }
                 else if (interaction.stringArg == "Dash")
                 {
+                    PlayerController.Instance.unlockedDash = true;
 
                 }
                 else if (interaction.stringArg == "Shield")
