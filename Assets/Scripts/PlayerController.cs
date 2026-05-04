@@ -27,7 +27,9 @@ public class PlayerController : MonoBehaviour
     public int numberOfAirJump;
     [SerializeField] private int currentNumberOfAirJump;
 
-    [SerializeField] float speed;
+    [SerializeField] float currentSpeed;
+    [SerializeField] float baseSpeed = 4;
+    [SerializeField] float crouchspeed;
     [SerializeField] float acc;
     [SerializeField] float runForce;
     [SerializeField] float dashForce;
@@ -44,6 +46,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] AnimationCurve jumpCurve;
     [SerializeField] AnimationCurve jumpDirectionCurve;
+
+    [SerializeField] Transform CameraLooker;
 
     [SerializeField] LayerMask ignoredLayer;
 
@@ -62,9 +66,11 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public bool running;
     public bool applyingRunForce;
+    public bool isCrouching = false;
 
     private void Start()
     {
+        currentSpeed = baseSpeed;
         currentNumberOfAirJump = numberOfAirJump;
     }
 
@@ -154,9 +160,20 @@ public class PlayerController : MonoBehaviour
             if (!unlockedDash || !canDash) return;
 
             dashed = true;
-
             
         }
+
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            if (isCrouching == false) StartCrouching();
+            isCrouching = true;
+        }
+        else
+        {
+            if (isCrouching == true) StopCrouching();
+            isCrouching = false;
+        }
+
 
         if (input.magnitude > 0) moving = true;
         else
@@ -177,6 +194,18 @@ public class PlayerController : MonoBehaviour
 
         smoothedInput = Vector2.SmoothDamp(smoothedInput, input, ref inputVelocity, acc, 999f, Time.deltaTime);
 
+    }
+
+    void StartCrouching()
+    {
+        currentSpeed = crouchspeed;
+        CameraLooker.position = new Vector3(CameraLooker.position.x, 0.5f, CameraLooker.position.z);
+    }
+
+    void StopCrouching()
+    {
+        currentSpeed = baseSpeed;
+        CameraLooker.position = new Vector3(CameraLooker.position.x, 1.5f, CameraLooker.position.z);
     }
 
     void StartRunning()
@@ -202,7 +231,7 @@ public class PlayerController : MonoBehaviour
 
         moveVector = (flatForward.normalized * smoothedInput.y) + (flatRight.normalized * smoothedInput.x);
 
-        vel = moveVector * speed;
+        vel = moveVector * currentSpeed;
 
         if(applyingRunForce)
         {
