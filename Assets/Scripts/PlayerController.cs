@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public bool readyToRun;
     public bool unlockedSprint = false;
     public bool unlockedDash = false;
+    public bool unlockedCrouch = false;
     public bool dashed = false;
     public bool canDash = false;
 
@@ -165,7 +166,7 @@ public class PlayerController : MonoBehaviour
             
         }
 
-        if (Input.GetKey(KeyCode.CapsLock))
+        if (Input.GetKey(KeyCode.CapsLock) && unlockedCrouch)
         {
             if (isCrouching == false) StartCrouching();
             isCrouching = true;

@@ -164,6 +164,7 @@ public class PlayerInteractor : MonoBehaviour
                 }
                 else if (interaction.stringArg == "Crouch")
                 {
+                    PlayerController.Instance.unlockedCrouch = true;
 
                 }
                 else if (interaction.stringArg == "Dash")
