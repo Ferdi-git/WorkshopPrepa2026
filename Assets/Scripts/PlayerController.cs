@@ -19,12 +19,17 @@ public class PlayerController : MonoBehaviour
     public bool moving;
     public bool readyToRun;
     public bool unlockedSprint = false;
+    public bool unlockedDash = false;
+    public bool dashed = false;
+
+
     public int numberOfAirJump;
     [SerializeField] private int currentNumberOfAirJump;
 
     [SerializeField] float speed;
     [SerializeField] float acc;
     [SerializeField] float runForce;
+    [SerializeField] float dashForce;
 
     Vector2 smoothedInput;
     Vector2 inputVelocity;
@@ -142,6 +147,15 @@ public class PlayerController : MonoBehaviour
             input.x += 1;
         }
 
+        if (Input.GetKey(KeyCode.Mouse2))
+        {
+            if (!unlockedDash) return;
+
+            dashed = true;
+
+            
+        }
+
         if (input.magnitude > 0) moving = true;
         else
         {
@@ -207,6 +221,13 @@ public class PlayerController : MonoBehaviour
         else if(!touchingGround)
         {
             vel.y = jumpCurve.Evaluate(1f);
+        }
+
+
+        if (dashed)
+        {
+            dashed = false;
+            vel += Vector3.forward * dashForce;
         }
 
         rb.linearVelocity = vel;
