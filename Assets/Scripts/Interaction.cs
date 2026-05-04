@@ -27,5 +27,6 @@ public enum InteractionType
     playSound,
     setCheckpoint,
     killPlayer,
-    teleportPlayer
+    teleportPlayer,
+    unlockCapacity
 }

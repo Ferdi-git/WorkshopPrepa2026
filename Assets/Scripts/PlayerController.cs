@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     public Transform cameraLookerTransform;
     public bool moving;
     public bool readyToRun;
+    public bool unlockedSprint = false;
+    public int numberOfAirJump;
+    [SerializeField] private int currentNumberOfAirJump;
 
     [SerializeField] float speed;
     [SerializeField] float acc;
@@ -53,6 +56,11 @@ public class PlayerController : MonoBehaviour
     public bool running;
     public bool applyingRunForce;
 
+    private void Start()
+    {
+        currentNumberOfAirJump = numberOfAirJump;
+    }
+
     public void PlayerControlUpdate()
     {
         InputUpdate();
@@ -76,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
             if (!touchingGround)
             {
-                if (Input.GetKeyDown(KeyCode.LeftShift))
+                if (Input.GetKeyDown(KeyCode.LeftShift) && unlockedSprint)
                 {
                     readyToRun = !readyToRun;
 
@@ -93,6 +101,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                currentNumberOfAirJump = numberOfAirJump;
                 if(running)
                 {
                     if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -102,7 +111,8 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
-                    if (Input.GetKeyDown(KeyCode.LeftShift) || readyToRun)
+
+                    if (unlockedSprint && Input.GetKeyDown(KeyCode.LeftShift) || readyToRun )
                     {
                         StartRunning();
                     }
@@ -225,13 +235,15 @@ public class PlayerController : MonoBehaviour
  
         //touchingGround = Physics.BoxCast(transform.position + (transform.up * botRayHeight), Vector3.one * botRaySize / 2f, -transform.up, Quaternion.identity, botRaySize, ~ignoredLayer); ;
 
-        if(touchingGround)
+        if(touchingGround || currentNumberOfAirJump > 0)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                if (!touchingGround) currentNumberOfAirJump -= 1;
                 Jump();
             }
         }
+
     }
 
     void Jump()
@@ -274,5 +286,10 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
 
+    }
+
+    public void UnlockDoubleJump()
+    {
+        numberOfAirJump = 1;
     }
 }

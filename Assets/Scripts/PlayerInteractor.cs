@@ -143,6 +143,38 @@ public class PlayerInteractor : MonoBehaviour
             case InteractionType.teleportPlayer:
                 PlayerController.Instance.transform.position = InteractiveObjectFromName(interaction.stringArg).transform.position;
                 break;
+            case InteractionType.unlockCapacity:
+
+                if (interaction.stringArg == "Double Jump")
+                {
+                    PlayerController.Instance.numberOfAirJump = 1;
+                }
+                else if(interaction.stringArg == "Sprint")
+                {
+                    PlayerController.Instance.unlockedSprint = true;
+
+                }
+                else if (interaction.stringArg == "Crouch")
+                {
+
+                }
+                else if (interaction.stringArg == "Dash")
+                {
+
+                }
+                else if (interaction.stringArg == "Shield")
+                {
+
+                }
+                else if (interaction.stringArg == "67")
+                {
+
+                }
+                else
+                {
+                    Debug.LogError("Salut c'est Ferdi t'as mis une valeur inconue dans ton unlockCapa les options c'est Double Jump, Sprint, Crouch, Sonic, Michael, Shield, 67");
+                }
+                break;
         }
 
         StartCoroutine(InteractionCoroutine());
