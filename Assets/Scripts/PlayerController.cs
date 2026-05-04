@@ -163,7 +163,7 @@ public class PlayerController : MonoBehaviour
             
         }
 
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.CapsLock))
         {
             if (isCrouching == false) StartCrouching();
             isCrouching = true;
@@ -199,17 +199,17 @@ public class PlayerController : MonoBehaviour
     void StartCrouching()
     {
         currentSpeed = crouchspeed;
-        CameraLooker.position = new Vector3(CameraLooker.position.x, 0.5f, CameraLooker.position.z);
+        CameraLooker.localPosition = new Vector3(CameraLooker.localPosition.x, 0.5f, CameraLooker.localPosition.z);
     }
 
     void StopCrouching()
     {
         currentSpeed = baseSpeed;
-        CameraLooker.position = new Vector3(CameraLooker.position.x, 1.5f, CameraLooker.position.z);
+        CameraLooker.localPosition = new Vector3(CameraLooker.localPosition.x, 1.5f, CameraLooker.localPosition.z);
     }
 
     void StartRunning()
-    {
+    { 
         readyToRun = false;
         running = true;
 
