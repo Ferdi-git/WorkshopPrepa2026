@@ -148,6 +148,8 @@ public class PlayerInteractor : MonoBehaviour
                 break;
             case InteractionType.teleportPlayer:
                 PlayerController.Instance.transform.position = InteractiveObjectFromName(interaction.stringArg).transform.position;
+                PlayerController.Instance.transform.rotation = InteractiveObjectFromName(interaction.stringArg).transform.rotation;
+
                 break;
             case InteractionType.unlockCapacity:
 
@@ -166,6 +168,7 @@ public class PlayerInteractor : MonoBehaviour
                 }
                 else if (interaction.stringArg == "Dash")
                 {
+                    PlayerController.Instance.unlockedDash = true;
 
                 }
                 else if (interaction.stringArg == "Shield")

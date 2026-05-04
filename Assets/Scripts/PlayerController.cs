@@ -21,15 +21,19 @@ public class PlayerController : MonoBehaviour
     public bool unlockedSprint = false;
     public bool unlockedDash = false;
     public bool dashed = false;
+    public bool canDash = false;
 
 
     public int numberOfAirJump;
     [SerializeField] private int currentNumberOfAirJump;
 
-    [SerializeField] float speed;
+    [SerializeField] float currentSpeed;
+    [SerializeField] float baseSpeed = 4;
+    [SerializeField] float crouchspeed;
     [SerializeField] float acc;
     [SerializeField] float runForce;
     [SerializeField] float dashForce;
+    [SerializeField] float dashCooldown =0.3f;
 
     Vector2 smoothedInput;
     Vector2 inputVelocity;
@@ -42,6 +46,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] AnimationCurve jumpCurve;
     [SerializeField] AnimationCurve jumpDirectionCurve;
+
+    [SerializeField] Transform CameraLooker;
 
     [SerializeField] LayerMask ignoredLayer;
 
@@ -60,9 +66,11 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public bool running;
     public bool applyingRunForce;
+    public bool isCrouching = false;
 
     private void Start()
     {
+        currentSpeed = baseSpeed;
         currentNumberOfAirJump = numberOfAirJump;
     }
 
@@ -147,14 +155,25 @@ public class PlayerController : MonoBehaviour
             input.x += 1;
         }
 
-        if (Input.GetKey(KeyCode.Mouse2))
+        if (Input.GetKey(KeyCode.Mouse1))
         {
-            if (!unlockedDash) return;
+            if (!unlockedDash || !canDash) return;
 
             dashed = true;
-
             
         }
+
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            if (isCrouching == false) StartCrouching();
+            isCrouching = true;
+        }
+        else
+        {
+            if (isCrouching == true) StopCrouching();
+            isCrouching = false;
+        }
+
 
         if (input.magnitude > 0) moving = true;
         else
@@ -175,6 +194,18 @@ public class PlayerController : MonoBehaviour
 
         smoothedInput = Vector2.SmoothDamp(smoothedInput, input, ref inputVelocity, acc, 999f, Time.deltaTime);
 
+    }
+
+    void StartCrouching()
+    {
+        currentSpeed = crouchspeed;
+        CameraLooker.position = new Vector3(CameraLooker.position.x, 0.5f, CameraLooker.position.z);
+    }
+
+    void StopCrouching()
+    {
+        currentSpeed = baseSpeed;
+        CameraLooker.position = new Vector3(CameraLooker.position.x, 1.5f, CameraLooker.position.z);
     }
 
     void StartRunning()
@@ -200,7 +231,7 @@ public class PlayerController : MonoBehaviour
 
         moveVector = (flatForward.normalized * smoothedInput.y) + (flatRight.normalized * smoothedInput.x);
 
-        vel = moveVector * speed;
+        vel = moveVector * currentSpeed;
 
         if(applyingRunForce)
         {
@@ -224,10 +255,11 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (dashed)
+        if (dashed )
         {
             dashed = false;
-            vel += Vector3.forward * dashForce;
+            vel += Camera.main.transform.forward * dashForce;
+            StartCoroutine(DashCooldown());
         }
 
         rb.linearVelocity = vel;
@@ -302,6 +334,13 @@ public class PlayerController : MonoBehaviour
 
         //touchingGround = Physics.Raycast(transform.position + (transform.up * botRayHeight), -transform.up, botRaySize, ~ignoredLayer);
 
+    }
+
+    private IEnumerator DashCooldown()
+    {
+        canDash = false;
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 
     public void Die()
