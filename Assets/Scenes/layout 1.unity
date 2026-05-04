@@ -1008,7 +1008,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -171, y: 223}
   m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &540470946
@@ -1031,7 +1031,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TEXT
+  m_text: 'I''M FUCKING FAST BRO.
+
+    TRY ME.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bfd4c526b6ca1849839bd8046686b18, type: 2}
   m_sharedMaterial: {fileID: -6014984318246262078, guid: 0bfd4c526b6ca1849839bd8046686b18, type: 2}
@@ -1040,8 +1042,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282006074
-  m_fontColor: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1073,7 +1075,7 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: 30
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
@@ -1265,7 +1267,7 @@ GameObject:
   - component: {fileID: 649697258}
   - component: {fileID: 649697259}
   m_Layer: 5
-  m_Name: HUDELEMENT_ExampleLetter
+  m_Name: RACE_YOU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1304,7 +1306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c770c6dfb3bb9f4e805c7c9ec38d121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName: Example Letter
+  elementName: RACE_YOU
 --- !u!1 &681691754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,7 +1339,7 @@ Transform:
   m_GameObject: {fileID: 681691754}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9, y: 0.57, z: 11.6}
+  m_LocalPosition: {x: 4.36, y: 4.77, z: 64.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1828,7 +1830,7 @@ GameObject:
   - component: {fileID: 752090398}
   - component: {fileID: 752090397}
   m_Layer: 0
-  m_Name: SOUNDOBJECT_Coucou
+  m_Name: SOUNDOBJECT_try-me
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1860,7 +1862,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 3b13247b2a0890844b828058c5ffd72a, type: 3}
+  m_Resource: {fileID: 8300000, guid: b080a05068b54ed4cbbcdfa22d4dea85, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1958,7 +1960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323e5d2cd99ead04786264c4b4e1d26b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundName: Coucou
+  soundName: try-me
 --- !u!1 &822887204
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,8 +2598,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 700}
+  m_AnchoredPosition: {x: 6.5337, y: 1.942}
+  m_SizeDelta: {x: 986.9326, y: 703.884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1283547730
 MonoBehaviour:
@@ -2619,7 +2621,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0f430f4f4587c824bb1670ceb40e6975, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2716,6 +2718,60 @@ Transform:
   - {fileID: 1826214430}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1355892885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8927395976345547708, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+  m_PrefabInstance: {fileID: 3540385110627810520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1355892888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355892885}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.0000005, y: 3, z: 0.20000003}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1355892889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355892885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46147955e10b8a143ac63af4983994b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
+  objectName: 
+  interactionID: 0
+  interactions:
+  - requiredObject: 
+    type: 5
+    stringArg: RACE_YOU
+    length: 0
+    nextInteractionID: 1
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 6
+    stringArg: 
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
+  goAwayAtStart: 0
 --- !u!1 &1413567535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,7 +3294,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8927395976345547708, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1355892889}
+    - targetCorrespondingSourceObject: {fileID: 8927395976345547708, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1355892888}
   m_SourcePrefab: {fileID: 100100000, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
 --- !u!1001 &6494057637762120810
 PrefabInstance:
