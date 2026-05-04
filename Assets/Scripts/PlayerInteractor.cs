@@ -42,7 +42,9 @@ public class PlayerInteractor : MonoBehaviour
         if (Physics.Raycast(ray, out hit, selectionDistance))
         {
             objectSelected = hit.collider.GetComponent<InteractiveObject>();
-            if(objectSelected != null && objectSelected.interactions.Length == 0) objectSelected = null;
+
+            if(objectSelected != null && objectSelected.interactions.Length == 0) 
+                objectSelected = null;
         }
         else
         {
@@ -146,6 +148,8 @@ public class PlayerInteractor : MonoBehaviour
                 break;
             case InteractionType.teleportPlayer:
                 PlayerController.Instance.transform.position = InteractiveObjectFromName(interaction.stringArg).transform.position;
+                PlayerController.Instance.transform.rotation = InteractiveObjectFromName(interaction.stringArg).transform.rotation;
+
                 break;
             case InteractionType.unlockCapacity:
 
