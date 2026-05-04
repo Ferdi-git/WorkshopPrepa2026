@@ -475,9 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsParent: {fileID: 0}
   parentParent: {fileID: 6414841851443010931}
-  playerObjects:
-  - {fileID: 0}
-  - {fileID: 0}
+  playerObjects: []
   switchingSpeed: 0.3
 --- !u!1 &3775946063377332747
 GameObject:
