@@ -3111,12 +3111,17 @@ MonoBehaviour:
   cameraLookerTransform: {fileID: 31438389}
   moving: 0
   readyToRun: 0
-  unlockedSprint: 0
+  unlockedSprint: 1
+  unlockedDash: 1
+  dashed: 0
+  canDash: 1
   numberOfAirJump: 1
   currentNumberOfAirJump: 0
   speed: 4
   acc: 0.05
   runForce: 2.6
+  dashForce: 40
+  dashCooldown: 0.5
   botRayHeight: 0.1
   botRaySize: 0.2
   botRayOffset: 0.24

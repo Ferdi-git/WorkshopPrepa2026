@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public bool unlockedSprint = false;
     public bool unlockedDash = false;
     public bool dashed = false;
+    public bool canDash = false;
 
 
     public int numberOfAirJump;
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float acc;
     [SerializeField] float runForce;
     [SerializeField] float dashForce;
+    [SerializeField] float dashCooldown =0.3f;
 
     Vector2 smoothedInput;
     Vector2 inputVelocity;
@@ -147,9 +149,9 @@ public class PlayerController : MonoBehaviour
             input.x += 1;
         }
 
-        if (Input.GetKey(KeyCode.Mouse2))
+        if (Input.GetKey(KeyCode.Mouse1))
         {
-            if (!unlockedDash) return;
+            if (!unlockedDash || !canDash) return;
 
             dashed = true;
 
@@ -224,10 +226,11 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (dashed)
+        if (dashed )
         {
             dashed = false;
-            vel += Vector3.forward * dashForce;
+            vel += Camera.main.transform.forward * dashForce;
+            StartCoroutine(DashCooldown());
         }
 
         rb.linearVelocity = vel;
@@ -302,6 +305,13 @@ public class PlayerController : MonoBehaviour
 
         //touchingGround = Physics.Raycast(transform.position + (transform.up * botRayHeight), -transform.up, botRaySize, ~ignoredLayer);
 
+    }
+
+    private IEnumerator DashCooldown()
+    {
+        canDash = false;
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 
     public void Die()
