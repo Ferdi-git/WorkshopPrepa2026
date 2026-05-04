@@ -42,7 +42,9 @@ public class PlayerInteractor : MonoBehaviour
         if (Physics.Raycast(ray, out hit, selectionDistance))
         {
             objectSelected = hit.collider.GetComponent<InteractiveObject>();
-            if(objectSelected != null && objectSelected.interactions.Length == 0) objectSelected = null;
+
+            if(objectSelected != null && objectSelected.interactions.Length == 0) 
+                objectSelected = null;
         }
         else
         {

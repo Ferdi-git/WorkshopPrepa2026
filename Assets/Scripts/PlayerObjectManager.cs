@@ -10,6 +10,8 @@ public class PlayerObjectManager : MonoBehaviour
     {
         Instance = this;
 
+        playerObjects = FindObjectsByType<PlayerObject>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+
         objectsParent.transform.parent = parentParent;
         objectsParent.transform.localPosition = Vector3.zero;
         objectsParent.transform.localEulerAngles = Vector3.zero;
