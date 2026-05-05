@@ -185,6 +185,9 @@ public class PlayerInteractor : MonoBehaviour
                     Debug.LogError("Salut c'est Ferdi t'as mis une valeur inconue dans ton unlockCapa les options c'est Double Jump, Sprint, Crouch, Sonic, Michael, Shield, 67");
                 }
                 break;
+            case InteractionType.playAnimation:
+                interactiveObject.GetComponent<Animator>().SetTrigger(interaction.stringArg);
+                break;
         }
 
         StartCoroutine(InteractionCoroutine());
