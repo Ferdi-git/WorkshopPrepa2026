@@ -1339,7 +1339,7 @@ Transform:
   m_GameObject: {fileID: 681691754}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.36, y: 4.77, z: 64.58}
+  m_LocalPosition: {x: 4.03, y: 0.36, z: 51.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1565,6 +1565,7 @@ MonoBehaviour:
   readyToRun: 0
   unlockedSprint: 1
   unlockedDash: 1
+  unlockedCrouch: 0
   dashed: 0
   canDash: 1
   numberOfAirJump: 1
@@ -1862,7 +1863,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: b080a05068b54ed4cbbcdfa22d4dea85, type: 3}
+  m_Resource: {fileID: 8300000, guid: bfeca6e3577755f4ba7e935039c5f14d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2767,7 +2768,7 @@ MonoBehaviour:
     playNextInteractionInstantly: 1
   - requiredObject: 
     type: 6
-    stringArg: 
+    stringArg: try-me
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
@@ -3247,6 +3248,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 822887205}
     m_Modifications:
+    - target: {fileID: 1978725615228273183, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 12.76209
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978725615228273183, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.9347
+      objectReference: {fileID: 0}
     - target: {fileID: 3246369152517683534, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3287,9 +3296,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3976510179302070103, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.032171
+      objectReference: {fileID: 0}
+    - target: {fileID: 3976510179302070103, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.0693
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988978189994626857, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.217172
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988978189994626857, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.1619
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825925974211763760, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 11.8702345
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825925974211763760, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.4779
+      objectReference: {fileID: 0}
     - target: {fileID: 5630726868695940489, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
       propertyPath: m_Name
       value: PIECE 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744678892561649140, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 12.955006
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744678892561649140, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.0312
+      objectReference: {fileID: 0}
+    - target: {fileID: 6835426525432235951, guid: b541ece825336de4e970db7c6eb33cf4, type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
