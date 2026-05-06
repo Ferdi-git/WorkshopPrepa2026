@@ -222,7 +222,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  CameraLooker: {fileID: 0}
+  CameraLooker: {fileID: 1254142925664669803}
   ignoredLayer:
     serializedVersion: 2
     m_Bits: 8
