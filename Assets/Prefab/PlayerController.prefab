@@ -155,7 +155,11 @@ MonoBehaviour:
   botRayHeight: 0.1
   botRaySize: 0.2
   botRayOffset: 0.24
-  jumpDuration: 0.72
+  jumpDuration: 0.8
+  coyoteTime: 0.12
+  jumpBufferTime: 0.12
+  coyoteTimer: 0
+  jumpBufferTimer: 0
   jumpCurve:
     serializedVersion: 2
     m_Curve:
