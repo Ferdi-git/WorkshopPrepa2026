@@ -1,3 +1,4 @@
+using DG.Tweening.Core.Easing;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,6 +36,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float runForce;
     [SerializeField] float dashForce;
     [SerializeField] float dashCooldown =0.3f;
+    [SerializeField] float dashDuration = 0.12f;
+    [SerializeField] AnimationCurve dashCurve;
+
+    Vector3 dashDirection; 
+    float dashTimer;
 
     Vector2 smoothedInput;
     Vector2 inputVelocity;
@@ -156,7 +162,7 @@ public class PlayerController : MonoBehaviour
             input.x += 1;
         }
 
-        if (Input.GetKey(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (!unlockedDash || !canDash) return;
 
@@ -260,11 +266,27 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (dashed )
+        if (dashed)
         {
             dashed = false;
-            vel += Camera.main.transform.forward * dashForce;
+            dashTimer = dashDuration;
+
+            dashDirection = new Vector3(cameraLookerTransform.forward.x, 0, cameraLookerTransform.forward.z).normalized;
+
+            vel.y = 0f;
             StartCoroutine(DashCooldown());
+        }
+
+        if (dashTimer > 0f)
+        {
+            dashTimer = Mathf.Max(0f, dashTimer - Time.deltaTime);
+            float t = 1f - (dashTimer / dashDuration);
+
+            vel = dashDirection * (dashForce * dashCurve.Evaluate(t));
+            vel.y = 0f;
+
+            rb.linearVelocity = vel;
+            return;
         }
 
         rb.linearVelocity = vel;
@@ -346,7 +368,14 @@ public class PlayerController : MonoBehaviour
     private IEnumerator DashCooldown()
     {
         canDash = false;
-        yield return new WaitForSeconds(dashCooldown);
+        float elapsed = 0f;
+
+        while (elapsed < dashCooldown || !touchingGround)
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
         canDash = true;
     }
 
