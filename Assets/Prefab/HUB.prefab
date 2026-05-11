@@ -8298,7 +8298,6 @@ GameObject:
   - component: {fileID: 7241267286713960830}
   - component: {fileID: 8544217808155548724}
   - component: {fileID: 6915053632153887709}
-  - component: {fileID: 8968009187218860881}
   - component: {fileID: 4845429979327909759}
   - component: {fileID: 56228396863022831}
   m_Layer: 0
@@ -8621,28 +8620,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6301523757321767521}
   m_Mesh: {fileID: 0}
---- !u!64 &8968009187218860881
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6301523757321767521}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!114 &4845429979327909759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8660,7 +8637,7 @@ MonoBehaviour:
   interactions:
   - requiredObject: 
     type: 9
-    stringArg: TPPoint_Level1
+    stringArg: TPPoint_1
     length: 0
     nextInteractionID: 1
     playNextInteractionInstantly: 1
@@ -9773,7 +9750,6 @@ GameObject:
   - component: {fileID: 8228448986779268121}
   - component: {fileID: 4466581097913173240}
   - component: {fileID: 993368975270714381}
-  - component: {fileID: 4295134035093078826}
   - component: {fileID: 4384962706680340539}
   - component: {fileID: 1276404550728195299}
   m_Layer: 0
@@ -10096,28 +10072,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7489835139050388117}
   m_Mesh: {fileID: 0}
---- !u!64 &4295134035093078826
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7489835139050388117}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!114 &4384962706680340539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10139,6 +10093,12 @@ MonoBehaviour:
     length: 0
     nextInteractionID: 1
     playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 2
+    stringArg: 
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
   goAwayAtStart: 0
 --- !u!65 &1276404550728195299
 BoxCollider:
