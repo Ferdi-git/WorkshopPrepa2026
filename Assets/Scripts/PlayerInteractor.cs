@@ -186,7 +186,14 @@ public class PlayerInteractor : MonoBehaviour
                 }
                 break;
             case InteractionType.playAnimation:
-                interactiveObject.GetComponent<Animator>().SetTrigger(interaction.stringArg);
+                Animator anim = interactiveObject.GetComponent<Animator>();
+                if(anim == null)
+                {
+                    anim = interactiveObject.GetComponentInParent<Animator>();
+
+                }
+                
+                anim.SetTrigger(interaction.stringArg);
                 break;
         }
 
