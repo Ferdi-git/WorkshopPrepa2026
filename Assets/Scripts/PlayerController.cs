@@ -1,3 +1,4 @@
+using DG.Tweening.Core.Easing;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,6 +36,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float runForce;
     [SerializeField] float dashForce;
     [SerializeField] float dashCooldown =0.3f;
+    [SerializeField] float dashDuration = 0.12f;
+    [SerializeField] AnimationCurve dashCurve;
+
+    Vector3 dashDirection; 
+    float dashTimer;
 
     Vector2 smoothedInput;
     Vector2 inputVelocity;
@@ -44,6 +50,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float botRaySize;
     [SerializeField] float botRayOffset;
     public float jumpDuration;
+    [SerializeField] float coyoteTime = 0.12f;
+    [SerializeField] float jumpBufferTime = 0.12f;
+
+    [HideInInspector] public float coyoteTimer;
+    [HideInInspector] public float jumpBufferTimer;
+
+    private bool wasOnGround;
 
     [SerializeField] AnimationCurve jumpCurve;
     [SerializeField] AnimationCurve jumpDirectionCurve;
@@ -102,14 +115,8 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.LeftShift) && unlockedSprint)
                 {
-                    readyToRun = !readyToRun;
-
-                    if (running)
-                    {
-                        StopRunning();
-
-                        readyToRun = false;
-                    }
+                    if (running) StopRunning();
+                    else StartRunning();
 
 
                 }
@@ -117,21 +124,18 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                currentNumberOfAirJump = numberOfAirJump;
                 if(running)
                 {
                     if (Input.GetKeyDown(KeyCode.LeftShift))
-                    {
                         StopRunning();
-                    }
+                   
                 }
                 else
                 {
 
                     if (unlockedSprint && Input.GetKeyDown(KeyCode.LeftShift) || readyToRun )
-                    {
                         StartRunning();
-                    }
+                    
                 }
             }
 
@@ -158,7 +162,7 @@ public class PlayerController : MonoBehaviour
             input.x += 1;
         }
 
-        if (Input.GetKey(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (!unlockedDash || !canDash) return;
 
@@ -262,11 +266,27 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (dashed )
+        if (dashed)
         {
             dashed = false;
-            vel += Camera.main.transform.forward * dashForce;
+            dashTimer = dashDuration;
+
+            dashDirection = new Vector3(cameraLookerTransform.forward.x, 0, cameraLookerTransform.forward.z).normalized;
+
+            vel.y = 0f;
             StartCoroutine(DashCooldown());
+        }
+
+        if (dashTimer > 0f)
+        {
+            dashTimer = Mathf.Max(0f, dashTimer - Time.deltaTime);
+            float t = 1f - (dashTimer / dashDuration);
+
+            vel = dashDirection * (dashForce * dashCurve.Evaluate(t));
+            vel.y = 0f;
+
+            rb.linearVelocity = vel;
+            return;
         }
 
         rb.linearVelocity = vel;
@@ -279,39 +299,45 @@ public class PlayerController : MonoBehaviour
 
     void JumpUpdate()
     {
-        jumping = false;
-
         if (jumpTimer > 0f)
         {
-            jumpTimer -= Time.deltaTime;
-            if (jumpTimer <= 0f) jumpTimer = 0f;
-
+            jumpTimer = Mathf.Max(0f, jumpTimer - Time.deltaTime);
             jumping = true;
         }
-        else
-        {
-            jumping = false;
-        }
- 
-        //touchingGround = Physics.BoxCast(transform.position + (transform.up * botRayHeight), Vector3.one * botRaySize / 2f, -transform.up, Quaternion.identity, botRaySize, ~ignoredLayer); ;
+        else jumping = false;
 
-        if(touchingGround || currentNumberOfAirJump > 0)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                if (!touchingGround) currentNumberOfAirJump -= 1;
-                Jump();
-            }
-        }
+        // Coyote
+        if (touchingGround) coyoteTimer = 0f;
+        else if (wasOnGround && !jumping) coyoteTimer = coyoteTime;
+        else coyoteTimer -= Time.deltaTime;
 
+        if (touchingGround && !wasOnGround) currentNumberOfAirJump = numberOfAirJump;
+        wasOnGround = touchingGround;
+
+        // Buffer
+        if (Input.GetKeyDown(KeyCode.Space)) jumpBufferTimer = jumpBufferTime;
+        else jumpBufferTimer = Mathf.Max(0f, jumpBufferTimer - Time.deltaTime);
+
+        bool canJump = touchingGround || coyoteTimer > 0f || currentNumberOfAirJump > 0;
+        if (jumpBufferTimer > 0f && canJump)
+        {
+            if (!touchingGround && coyoteTimer > 0f) coyoteTimer = 0f;
+            else if (!touchingGround) currentNumberOfAirJump--;
+
+            jumpBufferTimer = 0f;
+            jumpTimer = 0f;
+            Jump();
+        }
     }
+
 
     void Jump()
     {
         jumpTimer = jumpDuration;
 
         //jump direction
-        jumpDirection = vel;
+        Vector3 baseMove = moveVector * currentSpeed;
+        jumpDirection = new Vector3(baseMove.x, 0f, baseMove.z);
 
     }
 
@@ -319,34 +345,37 @@ public class PlayerController : MonoBehaviour
     {
         touchingGround = false;
 
-        Ray[] rays = new Ray[4];
         Vector3 start = transform.position + (transform.up * botRayHeight);
-        Vector3 offset = new Vector3(botRayOffset, 0, botRayOffset);
-        rays[0] = new Ray(start + offset, -transform.up + offset);
-        offset = new Vector3(-botRayOffset, 0, botRayOffset);
-        rays[1] = new Ray(start + offset, -transform.up + offset);
-        offset = new Vector3(botRayOffset, 0, -botRayOffset);
-        rays[2] = new Ray(start + offset, -transform.up + offset);
-        offset = new Vector3(-botRayOffset, 0, -botRayOffset);
-        rays[3] = new Ray(start + offset, -transform.up + offset);
+        Vector3 down = -transform.up;
 
-        for (int i = 0; i < 4; i++)
+        Vector3[] offsets = new Vector3[]
         {
-            Debug.DrawRay(rays[i].origin, rays[i].direction*botRaySize);
-            if(Physics.Raycast(rays[i], botRaySize, ~ignoredLayer))
-            {
+        new Vector3( botRayOffset, 0,  botRayOffset),
+        new Vector3(-botRayOffset, 0,  botRayOffset),
+        new Vector3( botRayOffset, 0, -botRayOffset),
+        new Vector3(-botRayOffset, 0, -botRayOffset),
+        };
+
+        foreach (var offset in offsets)
+        {
+            Ray ray = new Ray(start + offset, down);
+            Debug.DrawRay(ray.origin, ray.direction * botRaySize);
+            if (Physics.Raycast(ray, botRaySize, ~ignoredLayer))
                 touchingGround = true;
-            }
         }
-
-        //touchingGround = Physics.Raycast(transform.position + (transform.up * botRayHeight), -transform.up, botRaySize, ~ignoredLayer);
-
     }
 
     private IEnumerator DashCooldown()
     {
         canDash = false;
-        yield return new WaitForSeconds(dashCooldown);
+        float elapsed = 0f;
+
+        while (elapsed < dashCooldown || !touchingGround)
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
         canDash = true;
     }
 
