@@ -70,6 +70,14 @@ public class GameManager : MonoBehaviour
 
     public void KillPlayer()
     {
+
+        if(currentCheckpointName == "")
+        {
+            PlayerController.Instance.transform.position = basePlayerPos;
+            return;
+        }
+
+
         if(PlayerInteractor.Instance.InteractiveObjectFromName(currentCheckpointName) != null)
         {
             PlayerController.Instance.transform.position = PlayerInteractor.Instance.InteractiveObjectFromName(currentCheckpointName).transform.position;
