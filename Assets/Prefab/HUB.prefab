@@ -9454,7 +9454,7 @@ MonoBehaviour:
   interactions:
   - requiredObject: 
     type: 9
-    stringArg: TPPoint_Level2
+    stringArg: TPpp2
     length: 0
     nextInteractionID: 1
     playNextInteractionInstantly: 1
