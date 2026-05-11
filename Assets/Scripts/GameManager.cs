@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
         if(PlayerInteractor.Instance.InteractiveObjectFromName(currentCheckpointName) != null)
         {
             PlayerController.Instance.transform.position = PlayerInteractor.Instance.InteractiveObjectFromName(currentCheckpointName).transform.position;
+            PlayerController.Instance.transform.rotation = PlayerInteractor.Instance.InteractiveObjectFromName(currentCheckpointName).transform.rotation;
             return;
         }
 
