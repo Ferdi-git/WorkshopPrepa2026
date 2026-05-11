@@ -1078,7 +1078,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1213705232151368219}
   m_Layer: 0
-  m_Name: NIV 1
+  m_Name: PIECE 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1093,92 +1093,16 @@ Transform:
   m_GameObject: {fileID: 1672607019882831809}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.257, y: -0.01, z: 71.168}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1004433031964040085}
   - {fileID: 5819921290329554244}
-  - {fileID: 7702825637667306075}
   - {fileID: 827315633246795840}
   - {fileID: 3131899521837518874}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1904264050863689597
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1099277090307660956}
-  - component: {fileID: 967852747301030661}
-  - component: {fileID: 1860961807671471869}
-  m_Layer: 3
-  m_Name: 'Death Zone check niv 1 '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1099277090307660956
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904264050863689597}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.1, y: -4.33, z: 1.4000015}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5819921290329554244}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &967852747301030661
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904264050863689597}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 25.408066, y: 1, z: 111.89594}
-  m_Center: {x: -42.957375, y: 0, z: 23.265667}
---- !u!114 &1860961807671471869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904264050863689597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
-  objectName: Dzc1
-  interactionID: 0
-  interactions:
-  - requiredObject: 
-    type: 9
-    stringArg: TPpc1
-    length: 0
-    nextInteractionID: 0
-    playNextInteractionInstantly: 0
-  goAwayAtStart: 0
 --- !u!1 &3175717355948897733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,7 +1115,7 @@ GameObject:
   - component: {fileID: 5520892476138695807}
   - component: {fileID: 2553835581859362974}
   m_Layer: 3
-  m_Name: Zone Check Niv 1
+  m_Name: INTERACTIVEZONE_Checkpoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1245,69 +1169,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
-  objectName: Zcn1
+  objectName: ZCP1
   interactionID: 0
   interactions:
   - requiredObject: 
-    type: 3
-    stringArg: Dz1
-    length: 0
-    nextInteractionID: 1
-    playNextInteractionInstantly: 1
-  - requiredObject: 
-    type: 4
-    stringArg: Dzc1
+    type: 7
+    stringArg: ZCP1
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
-  goAwayAtStart: 0
---- !u!1 &3185815150485934499
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7702825637667306075}
-  - component: {fileID: 3861365454207358196}
-  m_Layer: 0
-  m_Name: INTERACTIVEOBJECT_TP POINT check niv 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7702825637667306075
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3185815150485934499}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9992097, z: -0, w: 0.039751213}
-  m_LocalPosition: {x: -6.73, y: 1.17, z: 28.63}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1213705232151368219}
-  m_LocalEulerAnglesHint: {x: 0, y: 175.444, z: 0}
---- !u!114 &3861365454207358196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3185815150485934499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46147955e10b8a143ac63af4983994b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
-  objectName: TPpc1
-  interactionID: 0
-  interactions: []
   goAwayAtStart: 0
 --- !u!1 &3429705437976692109
 GameObject:
@@ -2387,7 +2257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827315633246795840}
   m_Layer: 0
-  m_Name: wall
+  m_Name: WALLS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4932,7 +4802,7 @@ GameObject:
   - component: {fileID: 3176669502751103014}
   - component: {fileID: 4071446551413477818}
   m_Layer: 3
-  m_Name: Death Zone niv 1
+  m_Name: INTERACTIVEZONE_Death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4986,12 +4856,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
-  objectName: Dz1
+  objectName: DZ1
   interactionID: 0
   interactions:
   - requiredObject: 
-    type: 9
-    stringArg: TPp1
+    type: 8
+    stringArg: 
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
@@ -6074,7 +5944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5819921290329554244}
   m_Layer: 0
-  m_Name: DEATH ZONE
+  m_Name: DEATHZONES
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6094,7 +5964,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 744875950069448237}
-  - {fileID: 1099277090307660956}
   - {fileID: 8179145552171360398}
   m_Father: {fileID: 1213705232151368219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6981,6 +6850,54 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &8932273450467828692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1004433031964040085}
+  - component: {fileID: 4023845155069310820}
+  m_Layer: 0
+  m_Name: TPPoint_Level1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004433031964040085
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932273450467828692}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.155, y: 0.912, z: -19.656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1213705232151368219}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4023845155069310820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8932273450467828692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46147955e10b8a143ac63af4983994b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
+  objectName: TPPoint_Level1
+  interactionID: 0
+  interactions: []
+  goAwayAtStart: 0
 --- !u!1 &9086047752321312043
 GameObject:
   m_ObjectHideFlags: 0
