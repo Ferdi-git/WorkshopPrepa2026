@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bc28d1357c1f783499027ed16e5e4198
+guid: ec4694f86e06c28468f436a8f51da17f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,29 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: parquet_0
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 563
-        width: 1597
-        height: 1597
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c7a613a3bb0bc0488465bf873fec709
-      internalID: -2074494528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
@@ -131,8 +109,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      parquet_0: -2074494528
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
