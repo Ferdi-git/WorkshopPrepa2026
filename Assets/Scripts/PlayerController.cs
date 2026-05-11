@@ -1,3 +1,4 @@
+using DG.Tweening;
 using DG.Tweening.Core.Easing;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public bool unlockedSprint = false;
     public bool unlockedDash = false;
     public bool unlockedCrouch = false;
+    public bool unlocked67 = false;
     public bool dashed = false;
     public bool canDash = false;
 
@@ -124,23 +126,23 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                if(running)
+                if (running)
                 {
                     if (Input.GetKeyDown(KeyCode.LeftShift))
                         StopRunning();
-                   
+
                 }
                 else
                 {
 
-                    if (unlockedSprint && Input.GetKeyDown(KeyCode.LeftShift) || readyToRun )
+                    if (unlockedSprint && Input.GetKeyDown(KeyCode.LeftShift) || readyToRun)
                         StartRunning();
-                    
+
                 }
             }
 
 
-            if(running)
+            if (running)
             {
                 applyingRunForce = true;
             }
@@ -148,7 +150,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             input.y -= 1;
-            if(running)
+            if (running)
             {
                 StopRunning();
             }
@@ -167,7 +169,7 @@ public class PlayerController : MonoBehaviour
             if (!unlockedDash || !canDash) return;
 
             dashed = true;
-            
+
         }
 
         if (Input.GetKey(KeyCode.CapsLock) && unlockedCrouch)
@@ -187,7 +189,7 @@ public class PlayerController : MonoBehaviour
         {
             if (running) StopRunning();
 
-            if(Input.GetKey(KeyCode.LeftShift) && unlockedSprint)
+            if (Input.GetKey(KeyCode.LeftShift) && unlockedSprint)
             {
                 readyToRun = true;
             }
@@ -201,6 +203,14 @@ public class PlayerController : MonoBehaviour
 
         smoothedInput = Vector2.SmoothDamp(smoothedInput, input, ref inputVelocity, acc, 999f, Time.deltaTime);
 
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (!unlocked67) return;
+            //Time.timeScale = 0.25f;
+            Camera.main.DOShakePosition(1f,2);
+            print("SIIIX SEVEEEEN !!!!!!!!");
+        }
     }
 
     void StartCrouching()
