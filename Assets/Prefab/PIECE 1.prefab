@@ -494,6 +494,12 @@ MonoBehaviour:
     type: 9
     stringArg: TP_POINT_R1
     length: 0
+    nextInteractionID: 2
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 4
+    stringArg: Checkhub1
+    length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
   goAwayAtStart: 0
