@@ -492,7 +492,7 @@ MonoBehaviour:
     playNextInteractionInstantly: 1
   - requiredObject: 
     type: 9
-    stringArg: TP_POINT_R1
+    stringArg: TPpss
     length: 0
     nextInteractionID: 2
     playNextInteractionInstantly: 1
