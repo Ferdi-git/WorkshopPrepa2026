@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 1749773974003122632}
   - component: {fileID: 7413683843665978393}
   m_Layer: 0
-  m_Name: Double_Jump
+  m_Name: INTERACTIVEOBJECT_Unlocker_Double_Jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -499,6 +499,12 @@ MonoBehaviour:
   - requiredObject: 
     type: 4
     stringArg: Checkhub1
+    length: 0
+    nextInteractionID: 3
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: Door_Level1
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
@@ -1261,7 +1267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7121766817381403941}
   m_Layer: 0
-  m_Name: Unlock_Capacity
+  m_Name: INTERACTIVEOBJECT_Unlock_Capacity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

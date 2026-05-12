@@ -2216,7 +2216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6854858840970556717}
   m_Layer: 0
-  m_Name: Unlock Capacity
+  m_Name: INTERACTIVEOBJECT_Unlock Capacity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9718,7 +9718,7 @@ GameObject:
   - component: {fileID: 3116328974343681451}
   - component: {fileID: 2018642536920065406}
   m_Layer: 0
-  m_Name: Dash
+  m_Name: INTERACTIVEOBJECT_Unlocker_Dash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9847,6 +9847,12 @@ MonoBehaviour:
   - requiredObject: 
     type: 4
     stringArg: Checkhub2
+    length: 0
+    nextInteractionID: 3
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: Door_Level2
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
