@@ -7339,7 +7339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323e5d2cd99ead04786264c4b4e1d26b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundObject
-  soundName: Bad to the bone
+  soundName: bad to the bone
 --- !u!82 &1678822693902999520
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9914,7 +9914,7 @@ MonoBehaviour:
     playNextInteractionInstantly: 0
   - requiredObject: 
     type: 6
-    stringArg: Bad to the bone
+    stringArg: bad to the bone
     length: 0
     nextInteractionID: 2
     playNextInteractionInstantly: 1
