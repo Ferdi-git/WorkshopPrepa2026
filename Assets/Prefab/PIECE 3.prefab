@@ -324,7 +324,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 7694
+  m_VersionIndex: 7703
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -680,7 +680,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5699
+  m_VersionIndex: 5708
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 8486
+  m_VersionIndex: 8495
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 16006
+  m_VersionIndex: 16015
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1824,7 +1824,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 18360
+  m_VersionIndex: 18369
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2180,7 +2180,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 11023
+  m_VersionIndex: 11032
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2536,7 +2536,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 16006
+  m_VersionIndex: 16015
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2892,7 +2892,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 16270
+  m_VersionIndex: 16279
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3248,7 +3248,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 19768
+  m_VersionIndex: 19777
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3519,45 +3519,45 @@ MonoBehaviour:
   - m_Vertices: 0b0000000e00000012000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 1.0182126, y: -0.5, z: 0.5000038}
-  - {x: 3.3711402, y: -0.5, z: 0.5000038}
+  - {x: 1.0182126, y: 1.2560353, z: 0.5000038}
+  - {x: 3.3711402, y: 1.2560353, z: 0.5000038}
   - {x: 1.0182126, y: 2.990014, z: 0.5000038}
   - {x: 3.3711402, y: 2.990014, z: 0.5000038}
-  - {x: 3.3711402, y: -0.5, z: 0.5000038}
-  - {x: 3.3711402, y: -0.5, z: -1.5340614}
+  - {x: 3.3711402, y: 1.2560353, z: 0.5000038}
+  - {x: 3.3711402, y: 1.2560353, z: -1.5340614}
   - {x: 3.3711402, y: 2.990014, z: 0.5000038}
   - {x: 3.3711402, y: 2.990014, z: -1.5340614}
-  - {x: 3.3711402, y: -0.5, z: -1.5340614}
-  - {x: 1.0182126, y: -0.5, z: -1.5340614}
+  - {x: 3.3711402, y: 1.2560353, z: -1.5340614}
+  - {x: 1.0182126, y: 1.2560353, z: -1.5340614}
   - {x: 3.3711402, y: 2.990014, z: -1.5340614}
   - {x: 1.0182126, y: 2.990014, z: -1.5340614}
-  - {x: 1.0182126, y: -0.5, z: -1.5340614}
-  - {x: 1.0182126, y: -0.5, z: 0.5000038}
+  - {x: 1.0182126, y: 1.2560353, z: -1.5340614}
+  - {x: 1.0182126, y: 1.2560353, z: 0.5000038}
   - {x: 1.0182126, y: 2.990014, z: -1.5340614}
   - {x: 1.0182126, y: 2.990014, z: 0.5000038}
   - {x: 1.0182126, y: 2.990014, z: 0.5000038}
   - {x: 3.3711402, y: 2.990014, z: 0.5000038}
   - {x: 1.0182126, y: 2.990014, z: -1.5340614}
   - {x: 3.3711402, y: 2.990014, z: -1.5340614}
-  - {x: 1.0182126, y: -0.5, z: -1.5340614}
-  - {x: 3.3711402, y: -0.5, z: -1.5340614}
-  - {x: 1.0182126, y: -0.5, z: 0.5000038}
-  - {x: 3.3711402, y: -0.5, z: 0.5000038}
+  - {x: 1.0182126, y: 1.2560353, z: -1.5340614}
+  - {x: 3.3711402, y: 1.2560353, z: -1.5340614}
+  - {x: 1.0182126, y: 1.2560353, z: 0.5000038}
+  - {x: 3.3711402, y: 1.2560353, z: 0.5000038}
   m_Textures0:
-  - {x: 2.3529277, y: -2.490014}
-  - {x: 0, y: -2.490014}
+  - {x: 2.3529277, y: -0.73397875}
+  - {x: 0, y: -0.73397875}
   - {x: 2.3529277, y: 1}
   - {x: 0, y: 1}
-  - {x: 2.0340652, y: -2.490014}
-  - {x: 0, y: -2.490014}
+  - {x: 2.0340652, y: -0.73397875}
+  - {x: 0, y: -0.73397875}
   - {x: 2.0340652, y: 1}
   - {x: 0, y: 1}
-  - {x: 2.3529277, y: -2.490014}
-  - {x: 0, y: -2.490014}
+  - {x: 2.3529277, y: -0.73397875}
+  - {x: 0, y: -0.73397875}
   - {x: 2.3529277, y: 1}
   - {x: 0, y: 1}
-  - {x: 2.0340652, y: -2.490014}
-  - {x: 0, y: -2.490014}
+  - {x: 2.0340652, y: -0.73397875}
+  - {x: 0, y: -0.73397875}
   - {x: 2.0340652, y: 1}
   - {x: 0, y: 1}
   - {x: 0, y: 1}
@@ -3604,7 +3604,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 6062
+  m_VersionIndex: 7699
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3624,9 +3624,9 @@ MonoBehaviour:
   m_Shape:
     rid: 5715988383256543318
   m_ShapeRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_UnmodifiedMeshVersion: 6062
-  m_Size: {x: 2.3529277, y: 3.490014, z: 2.0340652}
-  m_LocalCenter: {x: 2.1946764, y: 1.245007, z: -0.5170288}
+  m_UnmodifiedMeshVersion: 7690
+  m_Size: {x: 2.3529277, y: 1.7339787, z: 2.0340652}
+  m_LocalCenter: {x: 2.1946764, y: 2.1230247, z: -0.5170288}
   references:
     version: 2
     RefIds:
@@ -3960,7 +3960,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 6205
+  m_VersionIndex: 6214
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4080,7 +4080,7 @@ GameObject:
   - component: {fileID: 7088710920444006152}
   - component: {fileID: 1457043359659231973}
   m_Layer: 3
-  m_Name: Death_Zone
+  m_Name: Death_Zone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4139,12 +4139,6 @@ MonoBehaviour:
   interactions:
   - requiredObject: 
     type: 8
-    stringArg: 
-    length: 0
-    nextInteractionID: 1
-    playNextInteractionInstantly: 1
-  - requiredObject: 
-    type: 7
     stringArg: 
     length: 0
     nextInteractionID: 0
@@ -4398,7 +4392,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3928
+  m_VersionIndex: 3937
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4745,54 +4739,54 @@ MonoBehaviour:
   - m_Vertices: 0b0000000e00000012000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 1.834759, y: 0.14326477, z: -1.4869823}
-  - {x: 2.9640005, y: 0.14326477, z: -1.4869823}
-  - {x: 1.834759, y: 0.5940881, z: -1.4869823}
-  - {x: 2.9640005, y: 0.5940881, z: -1.4869823}
-  - {x: 2.9640005, y: 0.14326477, z: -1.4869823}
-  - {x: 2.9640005, y: 0.14326477, z: -2.5512104}
-  - {x: 2.9640005, y: 0.5940881, z: -1.4869823}
-  - {x: 2.9640005, y: 0.5940881, z: -2.5512104}
-  - {x: 2.9640005, y: 0.14326477, z: -2.5512104}
-  - {x: 1.834759, y: 0.14326477, z: -2.5512104}
-  - {x: 2.9640005, y: 0.5940881, z: -2.5512104}
-  - {x: 1.834759, y: 0.5940881, z: -2.5512104}
-  - {x: 1.834759, y: 0.14326477, z: -2.5512104}
-  - {x: 1.834759, y: 0.14326477, z: -1.4869823}
-  - {x: 1.834759, y: 0.5940881, z: -2.5512104}
-  - {x: 1.834759, y: 0.5940881, z: -1.4869823}
-  - {x: 1.834759, y: 0.5940881, z: -1.4869823}
-  - {x: 2.9640005, y: 0.5940881, z: -1.4869823}
-  - {x: 1.834759, y: 0.5940881, z: -2.5512104}
-  - {x: 2.9640005, y: 0.5940881, z: -2.5512104}
-  - {x: 1.834759, y: 0.14326477, z: -2.5512104}
-  - {x: 2.9640005, y: 0.14326477, z: -2.5512104}
-  - {x: 1.834759, y: 0.14326477, z: -1.4869823}
-  - {x: 2.9640005, y: 0.14326477, z: -1.4869823}
+  - {x: 1.0568659, y: 0.14326477, z: -1.4869804}
+  - {x: 2.9640005, y: 0.14326477, z: -1.4869804}
+  - {x: 1.0568659, y: 0.5940881, z: -1.4869804}
+  - {x: 2.9640005, y: 0.5940881, z: -1.4869804}
+  - {x: 2.9640005, y: 0.14326477, z: -1.4869804}
+  - {x: 2.9640005, y: 0.14326477, z: -5.089283}
+  - {x: 2.9640005, y: 0.5940881, z: -1.4869804}
+  - {x: 2.9640005, y: 0.5940881, z: -5.089283}
+  - {x: 2.9640005, y: 0.14326477, z: -5.089283}
+  - {x: 1.0568659, y: 0.14326477, z: -5.089283}
+  - {x: 2.9640005, y: 0.5940881, z: -5.089283}
+  - {x: 1.0568659, y: 0.5940881, z: -5.089283}
+  - {x: 1.0568659, y: 0.14326477, z: -5.089283}
+  - {x: 1.0568659, y: 0.14326477, z: -1.4869804}
+  - {x: 1.0568659, y: 0.5940881, z: -5.089283}
+  - {x: 1.0568659, y: 0.5940881, z: -1.4869804}
+  - {x: 1.0568659, y: 0.5940881, z: -1.4869804}
+  - {x: 2.9640005, y: 0.5940881, z: -1.4869804}
+  - {x: 1.0568659, y: 0.5940881, z: -5.089283}
+  - {x: 2.9640005, y: 0.5940881, z: -5.089283}
+  - {x: 1.0568659, y: 0.14326477, z: -5.089283}
+  - {x: 2.9640005, y: 0.14326477, z: -5.089283}
+  - {x: 1.0568659, y: 0.14326477, z: -1.4869804}
+  - {x: 2.9640005, y: 0.14326477, z: -1.4869804}
   m_Textures0:
-  - {x: 1.1292415, y: 0.5491767}
+  - {x: 1.9071345, y: 0.5491767}
   - {x: 0, y: 0.5491767}
-  - {x: 1.1292415, y: 1}
+  - {x: 1.9071345, y: 1}
   - {x: 0, y: 1}
-  - {x: 1.064228, y: 0.5491767}
+  - {x: 3.6023026, y: 0.5491767}
   - {x: 0, y: 0.5491767}
-  - {x: 1.064228, y: 1}
+  - {x: 3.6023026, y: 1}
   - {x: 0, y: 1}
-  - {x: 1.1292415, y: 0.5491767}
+  - {x: 1.9071345, y: 0.5491767}
   - {x: 0, y: 0.5491767}
-  - {x: 1.1292415, y: 1}
+  - {x: 1.9071345, y: 1}
   - {x: 0, y: 1}
-  - {x: 1.064228, y: 0.5491767}
+  - {x: 3.6023026, y: 0.5491767}
   - {x: 0, y: 0.5491767}
-  - {x: 1.064228, y: 1}
+  - {x: 3.6023026, y: 1}
   - {x: 0, y: 1}
   - {x: 0, y: 1}
-  - {x: 1.1292415, y: 1}
-  - {x: 0, y: -0.06422806}
-  - {x: 1.1292415, y: -0.06422806}
-  - {x: 1.1292415, y: -0.06422806}
-  - {x: 0, y: -0.06422806}
-  - {x: 1.1292415, y: 1}
+  - {x: 1.9071345, y: 1}
+  - {x: 0, y: -2.6023026}
+  - {x: 1.9071345, y: -2.6023026}
+  - {x: 1.9071345, y: -2.6023026}
+  - {x: 0, y: -2.6023026}
+  - {x: 1.9071345, y: 1}
   - {x: 0, y: 1}
   m_Textures2: []
   m_Textures3: []
@@ -4830,7 +4824,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 17084
+  m_VersionIndex: 18974
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4850,9 +4844,9 @@ MonoBehaviour:
   m_Shape:
     rid: 5715988383256543318
   m_ShapeRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_UnmodifiedMeshVersion: 17084
-  m_Size: {x: 1.1292415, y: 0.4508233, z: 1.064228}
-  m_LocalCenter: {x: 2.3993797, y: 0.36867642, z: -2.0190964}
+  m_UnmodifiedMeshVersion: 18965
+  m_Size: {x: 1.9071345, y: 0.4508233, z: 3.6023026}
+  m_LocalCenter: {x: 2.0104332, y: 0.36867642, z: -3.2881317}
   references:
     version: 2
     RefIds:
@@ -5101,53 +5095,53 @@ MonoBehaviour:
   - m_Vertices: 0b0000000e00000012000000
   m_SharedTextures: []
   m_Positions:
-  - {x: -3.6117563, y: -0.49999142, z: 0.49999967}
-  - {x: 0.588768, y: -0.49999142, z: 0.49999967}
-  - {x: -3.6117563, y: 14.203118, z: 0.49999967}
-  - {x: 0.588768, y: 14.203118, z: 0.49999967}
-  - {x: 0.588768, y: -0.49999142, z: 0.49999967}
-  - {x: 0.588768, y: -0.49999142, z: -0.50000036}
-  - {x: 0.588768, y: 14.203118, z: 0.49999967}
-  - {x: 0.588768, y: 14.203118, z: -0.50000036}
-  - {x: 0.588768, y: -0.49999142, z: -0.50000036}
-  - {x: -3.6117563, y: -0.49999142, z: -0.50000036}
-  - {x: 0.588768, y: 14.203118, z: -0.50000036}
-  - {x: -3.6117563, y: 14.203118, z: -0.50000036}
-  - {x: -3.6117563, y: -0.49999142, z: -0.50000036}
-  - {x: -3.6117563, y: -0.49999142, z: 0.49999967}
-  - {x: -3.6117563, y: 14.203118, z: -0.50000036}
-  - {x: -3.6117563, y: 14.203118, z: 0.49999967}
-  - {x: -3.6117563, y: 14.203118, z: 0.49999967}
-  - {x: 0.588768, y: 14.203118, z: 0.49999967}
-  - {x: -3.6117563, y: 14.203118, z: -0.50000036}
-  - {x: 0.588768, y: 14.203118, z: -0.50000036}
-  - {x: -3.6117563, y: -0.49999142, z: -0.50000036}
-  - {x: 0.588768, y: -0.49999142, z: -0.50000036}
-  - {x: -3.6117563, y: -0.49999142, z: 0.49999967}
-  - {x: 0.588768, y: -0.49999142, z: 0.49999967}
+  - {x: -3.6117563, y: -0.49998808, z: 0.49999967}
+  - {x: 0.588768, y: -0.49998808, z: 0.49999967}
+  - {x: -3.6117563, y: 13.96195, z: 0.49999967}
+  - {x: 0.588768, y: 13.96195, z: 0.49999967}
+  - {x: 0.588768, y: -0.49998808, z: 0.49999967}
+  - {x: 0.588768, y: -0.49998808, z: -0.5000003}
+  - {x: 0.588768, y: 13.96195, z: 0.49999967}
+  - {x: 0.588768, y: 13.96195, z: -0.5000003}
+  - {x: 0.588768, y: -0.49998808, z: -0.5000003}
+  - {x: -3.6117563, y: -0.49998808, z: -0.5000003}
+  - {x: 0.588768, y: 13.96195, z: -0.5000003}
+  - {x: -3.6117563, y: 13.96195, z: -0.5000003}
+  - {x: -3.6117563, y: -0.49998808, z: -0.5000003}
+  - {x: -3.6117563, y: -0.49998808, z: 0.49999967}
+  - {x: -3.6117563, y: 13.96195, z: -0.5000003}
+  - {x: -3.6117563, y: 13.96195, z: 0.49999967}
+  - {x: -3.6117563, y: 13.96195, z: 0.49999967}
+  - {x: 0.588768, y: 13.96195, z: 0.49999967}
+  - {x: -3.6117563, y: 13.96195, z: -0.5000003}
+  - {x: 0.588768, y: 13.96195, z: -0.5000003}
+  - {x: -3.6117563, y: -0.49998808, z: -0.5000003}
+  - {x: 0.588768, y: -0.49998808, z: -0.5000003}
+  - {x: -3.6117563, y: -0.49998808, z: 0.49999967}
+  - {x: 0.588768, y: -0.49998808, z: 0.49999967}
   m_Textures0:
-  - {x: 4.2005243, y: -13.70311}
-  - {x: 0, y: -13.70311}
+  - {x: 4.2005243, y: -13.461939}
+  - {x: 0, y: -13.461939}
   - {x: 4.2005243, y: 1}
   - {x: 0, y: 1}
-  - {x: 1, y: -13.70311}
-  - {x: 0, y: -13.70311}
+  - {x: 1, y: -13.461939}
+  - {x: 0, y: -13.461939}
   - {x: 1, y: 1}
   - {x: 0, y: 1}
-  - {x: 4.2005243, y: -13.70311}
-  - {x: 0, y: -13.70311}
+  - {x: 4.2005243, y: -13.461939}
+  - {x: 0, y: -13.461939}
   - {x: 4.2005243, y: 1}
   - {x: 0, y: 1}
-  - {x: 1, y: -13.70311}
-  - {x: 0, y: -13.70311}
+  - {x: 1, y: -13.461939}
+  - {x: 0, y: -13.461939}
   - {x: 1, y: 1}
   - {x: 0, y: 1}
   - {x: 0, y: 1}
   - {x: 4.2005243, y: 1}
-  - {x: 0, y: 0}
-  - {x: 4.2005243, y: 0}
-  - {x: 4.2005243, y: 0}
-  - {x: 0, y: 0}
+  - {x: 0, y: 0.000000059604645}
+  - {x: 4.2005243, y: 0.000000059604645}
+  - {x: 4.2005243, y: 0.000000059604645}
+  - {x: 0, y: 0.000000059604645}
   - {x: 4.2005243, y: 1}
   - {x: 0, y: 1}
   m_Textures2: []
@@ -5186,7 +5180,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 10180
+  m_VersionIndex: 10310
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -5206,9 +5200,9 @@ MonoBehaviour:
   m_Shape:
     rid: 5715988337238212887
   m_ShapeRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_UnmodifiedMeshVersion: 10180
-  m_Size: {x: 4.2005243, y: 14.70311, z: 1}
-  m_LocalCenter: {x: -1.5114942, y: 6.8515635, z: -0.00000047683716}
+  m_UnmodifiedMeshVersion: 10301
+  m_Size: {x: 4.2005243, y: 14.461938, z: 1}
+  m_LocalCenter: {x: -1.5114942, y: 6.730981, z: -0.00000047683716}
   references:
     version: 2
     RefIds:
@@ -5542,7 +5536,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 8926
+  m_VersionIndex: 8935
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -5813,54 +5807,54 @@ MonoBehaviour:
   - m_Vertices: 0b0000000e00000012000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 4.3975744, y: -1.7756703, z: 1.6398942}
-  - {x: 7.2538347, y: -1.7756703, z: 1.6398942}
-  - {x: 4.3975744, y: -1.6126578, z: 1.6398942}
-  - {x: 7.2538347, y: -1.6126578, z: 1.6398942}
-  - {x: 7.2538347, y: -1.7756703, z: 1.6398942}
-  - {x: 7.2538347, y: -1.7756703, z: -3.322416}
-  - {x: 7.2538347, y: -1.6126578, z: 1.6398942}
-  - {x: 7.2538347, y: -1.6126578, z: -3.322416}
-  - {x: 7.2538347, y: -1.7756703, z: -3.322416}
-  - {x: 4.3975744, y: -1.7756703, z: -3.322416}
-  - {x: 7.2538347, y: -1.6126578, z: -3.322416}
-  - {x: 4.3975744, y: -1.6126578, z: -3.322416}
-  - {x: 4.3975744, y: -1.7756703, z: -3.322416}
-  - {x: 4.3975744, y: -1.7756703, z: 1.6398942}
-  - {x: 4.3975744, y: -1.6126578, z: -3.322416}
-  - {x: 4.3975744, y: -1.6126578, z: 1.6398942}
-  - {x: 4.3975744, y: -1.6126578, z: 1.6398942}
-  - {x: 7.2538347, y: -1.6126578, z: 1.6398942}
-  - {x: 4.3975744, y: -1.6126578, z: -3.322416}
-  - {x: 7.2538347, y: -1.6126578, z: -3.322416}
-  - {x: 4.3975744, y: -1.7756703, z: -3.322416}
-  - {x: 7.2538347, y: -1.7756703, z: -3.322416}
-  - {x: 4.3975744, y: -1.7756703, z: 1.6398942}
-  - {x: 7.2538347, y: -1.7756703, z: 1.6398942}
+  - {x: 4.4262915, y: -1.7756689, z: 1.6398928}
+  - {x: 7.2538347, y: -1.7756689, z: 1.6398928}
+  - {x: 4.4262915, y: -1.6126564, z: 1.6398928}
+  - {x: 7.2538347, y: -1.6126564, z: 1.6398928}
+  - {x: 7.2538347, y: -1.7756689, z: 1.6398928}
+  - {x: 7.2538347, y: -1.7756689, z: -3.3224175}
+  - {x: 7.2538347, y: -1.6126564, z: 1.6398928}
+  - {x: 7.2538347, y: -1.6126564, z: -3.3224175}
+  - {x: 7.2538347, y: -1.7756689, z: -3.3224175}
+  - {x: 4.4262915, y: -1.7756689, z: -3.3224175}
+  - {x: 7.2538347, y: -1.6126564, z: -3.3224175}
+  - {x: 4.4262915, y: -1.6126564, z: -3.3224175}
+  - {x: 4.4262915, y: -1.7756689, z: -3.3224175}
+  - {x: 4.4262915, y: -1.7756689, z: 1.6398928}
+  - {x: 4.4262915, y: -1.6126564, z: -3.3224175}
+  - {x: 4.4262915, y: -1.6126564, z: 1.6398928}
+  - {x: 4.4262915, y: -1.6126564, z: 1.6398928}
+  - {x: 7.2538347, y: -1.6126564, z: 1.6398928}
+  - {x: 4.4262915, y: -1.6126564, z: -3.3224175}
+  - {x: 7.2538347, y: -1.6126564, z: -3.3224175}
+  - {x: 4.4262915, y: -1.7756689, z: -3.3224175}
+  - {x: 7.2538347, y: -1.7756689, z: -3.3224175}
+  - {x: 4.4262915, y: -1.7756689, z: 1.6398928}
+  - {x: 7.2538347, y: -1.7756689, z: 1.6398928}
   m_Textures0:
-  - {x: 2.8562603, y: 0.8369875}
+  - {x: 2.8275433, y: 0.8369875}
   - {x: 0, y: 0.8369875}
-  - {x: 2.8562603, y: 1}
+  - {x: 2.8275433, y: 1}
   - {x: 0, y: 1}
   - {x: 4.9623103, y: 0.8369875}
   - {x: 0, y: 0.8369875}
   - {x: 4.9623103, y: 1}
   - {x: 0, y: 1}
-  - {x: 2.8562603, y: 0.8369875}
+  - {x: 2.8275433, y: 0.8369875}
   - {x: 0, y: 0.8369875}
-  - {x: 2.8562603, y: 1}
+  - {x: 2.8275433, y: 1}
   - {x: 0, y: 1}
   - {x: 4.9623103, y: 0.8369875}
   - {x: 0, y: 0.8369875}
   - {x: 4.9623103, y: 1}
   - {x: 0, y: 1}
   - {x: 0, y: 1}
-  - {x: 2.8562603, y: 1}
+  - {x: 2.8275433, y: 1}
   - {x: 0, y: -3.9623103}
-  - {x: 2.8562603, y: -3.9623103}
-  - {x: 2.8562603, y: -3.9623103}
+  - {x: 2.8275433, y: -3.9623103}
+  - {x: 2.8275433, y: -3.9623103}
   - {x: 0, y: -3.9623103}
-  - {x: 2.8562603, y: 1}
+  - {x: 2.8275433, y: 1}
   - {x: 0, y: 1}
   m_Textures2: []
   m_Textures3: []
@@ -5898,7 +5892,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 13674
+  m_VersionIndex: 14321
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -5918,9 +5912,9 @@ MonoBehaviour:
   m_Shape:
     rid: 5715988383256543318
   m_ShapeRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_UnmodifiedMeshVersion: 13674
-  m_Size: {x: 2.8562608, y: 0.1630125, z: 4.9623103}
-  m_LocalCenter: {x: 5.8257046, y: -1.6941639, z: -0.8412609}
+  m_UnmodifiedMeshVersion: 14312
+  m_Size: {x: 2.8275437, y: 0.1630125, z: 4.9623103}
+  m_LocalCenter: {x: 5.840063, y: -1.6941626, z: -0.84126234}
   references:
     version: 2
     RefIds:
@@ -6254,7 +6248,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 13810
+  m_VersionIndex: 13819
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6610,7 +6604,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 16006
+  m_VersionIndex: 16015
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6966,7 +6960,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 16006
+  m_VersionIndex: 16015
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -7322,7 +7316,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 6205
+  m_VersionIndex: 6214
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -7678,7 +7672,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 19812
+  m_VersionIndex: 19821
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -7786,6 +7780,82 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &4402674345227499515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8112063071009369641}
+  - component: {fileID: 6484037423696851973}
+  - component: {fileID: 4288772750758517735}
+  m_Layer: 3
+  m_Name: Killing_Platform18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8112063071009369641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4402674345227499515}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 31.702, y: 4.154, z: -1.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4589357010311749027}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &6484037423696851973
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4402674345227499515}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.65448934, y: 0.117902756, z: 0.7906111}
+  m_Center: {x: 3.3374557, y: -4.3306513, z: 1.6447873}
+--- !u!114 &4288772750758517735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4402674345227499515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
+  objectName: killer_platform4.2
+  interactionID: 0
+  interactions:
+  - requiredObject: 
+    type: 8
+    stringArg: 
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
+  goAwayAtStart: 0
 --- !u!1 &4554043257338586192
 GameObject:
   m_ObjectHideFlags: 0
@@ -8034,7 +8104,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 7019
+  m_VersionIndex: 7028
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -8390,7 +8460,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 13091
+  m_VersionIndex: 13100
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -8536,6 +8606,7 @@ Transform:
   - {fileID: 5433815392112823534}
   - {fileID: 7872798232351026312}
   - {fileID: 1298738780547314882}
+  - {fileID: 8112063071009369641}
   m_Father: {fileID: 3246369152517683534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5236123508680943275
@@ -8862,7 +8933,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 8662
+  m_VersionIndex: 8671
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -8970,6 +9041,82 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &5354308693609800130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4666685486700251391}
+  - component: {fileID: 5545737134750791519}
+  - component: {fileID: 1929821747177765463}
+  m_Layer: 3
+  m_Name: INTERACTIVEZONE_Piece3_CheckPoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4666685486700251391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5354308693609800130}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -24.69997, y: 3.8340998, z: 1.5699997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5629442413202057595}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5545737134750791519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5354308693609800130}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.2747989, y: 1, z: 2.923149}
+  m_Center: {x: 0.29565024, y: 0, z: 0.9247589}
+--- !u!114 &1929821747177765463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5354308693609800130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
+  objectName: ZCP3p1
+  interactionID: 0
+  interactions:
+  - requiredObject: 
+    type: 7
+    stringArg: ZCP3p1
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
+  goAwayAtStart: 0
 --- !u!1 &5498441135188983877
 GameObject:
   m_ObjectHideFlags: 0
@@ -9218,7 +9365,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 14191
+  m_VersionIndex: 14200
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -9574,7 +9721,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 8581
+  m_VersionIndex: 8590
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -9930,7 +10077,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 17271
+  m_VersionIndex: 17280
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -10358,7 +10505,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 16523
+  m_VersionIndex: 16532
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -10714,7 +10861,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 8816
+  m_VersionIndex: 8825
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -11070,7 +11217,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 7921
+  m_VersionIndex: 7930
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -11178,6 +11325,82 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &6757511666442288649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2238232506394143902}
+  - component: {fileID: 9040081159209030075}
+  - component: {fileID: 1932450371463303303}
+  m_Layer: 3
+  m_Name: INTERACTIVEZONE_Piece3_CheckPoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2238232506394143902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6757511666442288649}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.163029, y: 0.96009994, z: 1.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5629442413202057595}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &9040081159209030075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6757511666442288649}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2362189, y: 0.54443216, z: 0.7898102}
+  m_Center: {x: 0.8149402, y: 0.22778392, z: 1.9914284}
+--- !u!114 &1932450371463303303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6757511666442288649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
+  objectName: ZCP3p2
+  interactionID: 0
+  interactions:
+  - requiredObject: 
+    type: 7
+    stringArg: ZCP3p2
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
+  goAwayAtStart: 0
 --- !u!1 &6884495915373841516
 GameObject:
   m_ObjectHideFlags: 0
@@ -11626,7 +11849,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9949
+  m_VersionIndex: 9958
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -11982,7 +12205,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 17007
+  m_VersionIndex: 17016
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -12414,7 +12637,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 15852
+  m_VersionIndex: 15861
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -12846,7 +13069,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 21055
+  m_VersionIndex: 21064
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -12986,6 +13209,8 @@ Transform:
   - {fileID: 4614337294119418209}
   - {fileID: 6334642995839715780}
   - {fileID: 4213234533883833133}
+  - {fileID: 4666685486700251391}
+  - {fileID: 2238232506394143902}
   m_Father: {fileID: 3246369152517683534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8264983534279518832
@@ -13236,7 +13461,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 13036
+  m_VersionIndex: 13045
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -13374,7 +13599,7 @@ Transform:
   m_GameObject: {fileID: 8448900840876885682}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9, y: 3.89, z: 94.53}
+  m_LocalPosition: {x: 3.9, y: 3.66, z: 94.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13592,7 +13817,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 9956
+  m_VersionIndex: 9965
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -14024,7 +14249,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 15577
+  m_VersionIndex: 15586
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -14380,7 +14605,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 12017
+  m_VersionIndex: 12026
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -14877,7 +15102,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5248
+  m_VersionIndex: 5257
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
