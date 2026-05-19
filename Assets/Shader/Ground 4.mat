@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Parquet
+  m_Name: Ground 4
   m_Shader: {fileID: -6465566751694194690, guid: 84c4a5ae6ae46a14ab556e06c4fc0e0d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -60,12 +60,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _Metalic: 0
-    - _Offset: 0
+    - _Offset: 0.43
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Rotation: 0
-    - _Smoothness: 0.5
-    - _Tiling: -147.67
+    - _Rotation: 90
+    - _Smoothness: 0
+    - _Tiling: -0.74
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
