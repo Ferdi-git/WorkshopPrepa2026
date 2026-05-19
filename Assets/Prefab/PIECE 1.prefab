@@ -506,6 +506,18 @@ MonoBehaviour:
     type: 3
     stringArg: Door_Level1
     length: 0
+    nextInteractionID: 4
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: Door_Level1
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
+  - requiredObject: 
+    type: 4
+    stringArg: tuto double jump
+    length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
   goAwayAtStart: 0

@@ -2002,7 +2002,7 @@ MonoBehaviour:
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
-  goAwayAtStart: 0
+  goAwayAtStart: 1
 --- !u!1 &5059921709817108759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,7 +2090,7 @@ MonoBehaviour:
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
-  goAwayAtStart: 0
+  goAwayAtStart: 1
 --- !u!1 &6588937272305448670
 GameObject:
   m_ObjectHideFlags: 0
@@ -3199,7 +3199,7 @@ MonoBehaviour:
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
-  goAwayAtStart: 0
+  goAwayAtStart: 1
 --- !u!1 &8267300722787530519
 GameObject:
   m_ObjectHideFlags: 0
