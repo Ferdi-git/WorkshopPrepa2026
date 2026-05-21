@@ -9226,7 +9226,7 @@ MonoBehaviour:
     stringArg: Drive
     length: 0
     nextInteractionID: 1
-    playNextInteractionInstantly: 0
+    playNextInteractionInstantly: 1
   - requiredObject: 
     type: 5
     stringArg: Ryan explains hub couloir pt.1
