@@ -521,16 +521,22 @@ MonoBehaviour:
     nextInteractionID: 6
     playNextInteractionInstantly: 1
   - requiredObject: 
+    type: 4
+    stringArg: ryan door 2
+    length: 0
+    nextInteractionID: 7
+    playNextInteractionInstantly: 1
+  - requiredObject: 
     type: 3
     stringArg: ANIMATOR_RYAN
     length: 0
-    nextInteractionID: 7
+    nextInteractionID: 8
     playNextInteractionInstantly: 1
   - requiredObject: 
     type: 4
     stringArg: ryan door 2
     length: 0
-    nextInteractionID: 7
+    nextInteractionID: 8
     playNextInteractionInstantly: 1
   goAwayAtStart: 0
 --- !u!1 &1516564781982096058
