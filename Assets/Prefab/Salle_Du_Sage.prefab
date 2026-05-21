@@ -917,7 +917,7 @@ MonoBehaviour:
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
-  goAwayAtStart: 0
+  goAwayAtStart: 1
 --- !u!65 &8942393177710032020
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2784,13 +2784,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7684577622575423210}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.91, y: 2.722, z: -22.3979}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.9099998, y: 2.7219996, z: -22.3979}
   m_LocalScale: {x: 0.4163128, y: 0.43466422, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7243718630423931560}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3981376819798710355
 SpriteRenderer:
   serializedVersion: 2
@@ -2889,6 +2889,12 @@ MonoBehaviour:
   - requiredObject: 
     type: 5
     stringArg: Ryan explains Sage
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
+  - requiredObject: 
+    type: 4
+    stringArg: TPspawn
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
