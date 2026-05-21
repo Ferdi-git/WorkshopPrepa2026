@@ -11537,8 +11537,8 @@ MonoBehaviour:
     type: 4
     stringArg: ryan door 3
     length: 0
-    nextInteractionID: 7
-    playNextInteractionInstantly: 1
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
   goAwayAtStart: 0
 --- !u!1 &8927395976345547708
 GameObject:
