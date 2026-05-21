@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eff67393d778d4a48b48dd2841c3f976
+guid: cf75b49fbc2ef704994455f3056ae242
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: pCube2Mat
-    second: {fileID: 2100000, guid: 59685ea6d30a4ad4a81ccdd7c7d760e9, type: 2}
+      name: blinn1
+    second: {fileID: 2100000, guid: b71b7081121bdbb45afe678c0f582387, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
