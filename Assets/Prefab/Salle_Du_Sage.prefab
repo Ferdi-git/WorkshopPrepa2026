@@ -1195,12 +1195,18 @@ MonoBehaviour:
     stringArg: sprint
     length: 0
     nextInteractionID: 1
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 4
+    stringArg: TPspawn
+    length: 0
+    nextInteractionID: 2
     playNextInteractionInstantly: 0
   - requiredObject: 
     type: 5
     stringArg: random
     length: 0
-    nextInteractionID: 0
+    nextInteractionID: 2
     playNextInteractionInstantly: 0
   goAwayAtStart: 0
 --- !u!1 &4201579885917206546
@@ -2351,12 +2357,18 @@ MonoBehaviour:
     stringArg: doubleJump
     length: 0
     nextInteractionID: 2
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 4
+    stringArg: TPspawn
+    length: 0
+    nextInteractionID: 3
     playNextInteractionInstantly: 0
   - requiredObject: 
     type: 5
     stringArg: random
     length: 0
-    nextInteractionID: 0
+    nextInteractionID: 3
     playNextInteractionInstantly: 0
   goAwayAtStart: 1
 --- !u!1 &5059921709817108759
@@ -2439,12 +2451,18 @@ MonoBehaviour:
     stringArg: 67
     length: 0
     nextInteractionID: 2
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 4
+    stringArg: TPspawn
+    length: 0
+    nextInteractionID: 3
     playNextInteractionInstantly: 0
   - requiredObject: 
     type: 5
     stringArg: random
     length: 0
-    nextInteractionID: 0
+    nextInteractionID: 3
     playNextInteractionInstantly: 0
   goAwayAtStart: 1
 --- !u!1 &6588937272305448670
@@ -3335,12 +3353,18 @@ MonoBehaviour:
     stringArg: dash
     length: 0
     nextInteractionID: 2
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 4
+    stringArg: TPspawn
+    length: 0
+    nextInteractionID: 3
     playNextInteractionInstantly: 0
   - requiredObject: 
     type: 5
     stringArg: random
     length: 0
-    nextInteractionID: 0
+    nextInteractionID: 3
     playNextInteractionInstantly: 0
   goAwayAtStart: 1
 --- !u!1 &8267300722787530519
