@@ -7268,7 +7268,13 @@ MonoBehaviour:
     type: 11
     stringArg: run
     length: 0
-    nextInteractionID: 0
+    nextInteractionID: 3
+    playNextInteractionInstantly: 0
+  - requiredObject: 
+    type: 5
+    stringArg: Fast as Fuck 2
+    length: 0
+    nextInteractionID: 3
     playNextInteractionInstantly: 0
   goAwayAtStart: 0
 --- !u!65 &2411581558148468328
