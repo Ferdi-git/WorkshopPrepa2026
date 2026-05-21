@@ -512,14 +512,26 @@ MonoBehaviour:
     type: 3
     stringArg: Door_Level1
     length: 0
-    nextInteractionID: 0
-    playNextInteractionInstantly: 0
+    nextInteractionID: 5
+    playNextInteractionInstantly: 1
   - requiredObject: 
     type: 4
     stringArg: tuto double jump
     length: 0
-    nextInteractionID: 0
-    playNextInteractionInstantly: 0
+    nextInteractionID: 6
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: ANIMATOR_RYAN
+    length: 0
+    nextInteractionID: 7
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 4
+    stringArg: ryan door 2
+    length: 0
+    nextInteractionID: 7
+    playNextInteractionInstantly: 1
   goAwayAtStart: 0
 --- !u!1 &1516564781982096058
 GameObject:
