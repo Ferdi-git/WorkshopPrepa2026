@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lava
+  m_Name: Lava tableau
   m_Shader: {fileID: -6465566751694194690, guid: 4c4a1d2e88571c945b5557bfc8e7dcfa, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -38,11 +38,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Bloom: 5
-    - _Float: 0.7
+    - _Bloom: 5.15
+    - _Float: -0.09
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 1
+    - _Scale: 4.2
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
