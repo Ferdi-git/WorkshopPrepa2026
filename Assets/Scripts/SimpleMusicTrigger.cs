@@ -6,11 +6,11 @@ public class SimpleMusicTrigger : MonoBehaviour
     [Header("References")]
     [Tooltip("The AudioSource somewhere in your scene that plays the music.")]
     [SerializeField] private AudioSource audioSource;
-
+    
     [Header("Music Settings")]
     [SerializeField] private AudioClip newMusicTrack;
     [SerializeField] private float fadeDuration = 1.5f;
-
+    
     [Header("Target")]
     [SerializeField] private string targetTag = "Player";
 
