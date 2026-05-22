@@ -39,10 +39,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _Bloom: 10
-    - _Float: 0.2
+    - _Float: 0.47
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 1.43
+    - _Scale: 1.15
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
