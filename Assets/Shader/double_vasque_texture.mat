@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Metal_tonneau
+  m_Name: double_vasque_texture
   m_Shader: {fileID: -6465566751694194690, guid: 84c4a5ae6ae46a14ab556e06c4fc0e0d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -38,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f3ea7272381669a4181a4c49a86a76a3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7c051c772acce84418bbda6cf8b9c1ac, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
@@ -60,12 +60,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _Metalic: 0
-    - _Offset: -2.69
+    - _Offset: -1.43
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Rotation: 0
+    - _Rotation: 90
     - _Smoothness: 0
-    - _Tiling: 0.07
+    - _Tiling: 1.32
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
