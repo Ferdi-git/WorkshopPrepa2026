@@ -25338,6 +25338,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 194
       objectReference: {fileID: 0}
+    - target: {fileID: 2951309350779659889, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6906
+      objectReference: {fileID: 0}
+    - target: {fileID: 2951309350779659889, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6906
+      objectReference: {fileID: 0}
+    - target: {fileID: 2951309350779659889, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6906
+      objectReference: {fileID: 0}
+    - target: {fileID: 2951309350779659889, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 365
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597091821059967300, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b70836d569ef1b940a3b4817afcd096f, type: 3}
     - target: {fileID: 6558584811533876592, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
       propertyPath: m_text
       value: 'I''M FAST AS FUCK, BRO.
@@ -25355,6 +25375,18 @@ PrefabInstance:
     - target: {fileID: 7762826794057103968, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
       propertyPath: m_Name
       value: HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 7794451079324557615, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.101192944
+      objectReference: {fileID: 0}
+    - target: {fileID: 7794451079324557615, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7794451079324557615, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8301887
       objectReference: {fileID: 0}
     - target: {fileID: 8031565245187253145, guid: 010a3492b60a6b247af2b813b11268d3, type: 3}
       propertyPath: m_Pivot.x
@@ -25730,6 +25762,10 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 20541
       objectReference: {fileID: 0}
+    - target: {fileID: 1872551646570406443, guid: 6ddc85c901bc1f342a778bfe142c9ba5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f0fe7ac45de938844bf5bf3a254be4ea, type: 2}
     - target: {fileID: 1925806280591700927, guid: 6ddc85c901bc1f342a778bfe142c9ba5, type: 3}
       propertyPath: m_Mesh
       value: 
