@@ -5,9 +5,16 @@ public class PlayerInteractor : MonoBehaviour
 {
     public static PlayerInteractor Instance;
 
+    public AudioSource audioSource;
+
+    public AudioClip[] deathSounds;
     private void Awake()
     {
         Instance = this;
+    }
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Initialize()
@@ -144,7 +151,13 @@ public class PlayerInteractor : MonoBehaviour
                 GameManager.Instance.SetCheckpoint(interaction.stringArg);
                 break;
             case InteractionType.killPlayer:
+
+                int randInt = Random.Range(0, deathSounds.Length);
+                audioSource.clip = deathSounds[randInt];
+                audioSource.Play();
+
                 GameManager.Instance.KillPlayer();
+
                 break;
             case InteractionType.teleportPlayer:
                 PlayerController.Instance.transform.position = InteractiveObjectFromName(interaction.stringArg).transform.position;

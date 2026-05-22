@@ -85,8 +85,14 @@ public class PlayerController : MonoBehaviour
     public bool isCrouching = false;
     private CapsuleCollider playerCollider;
 
+    [SerializeField] AudioClip dashSound;
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] AudioClip doubleJumpSound;
+    private AudioSource audioSource;
+
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         playerCollider = GetComponent<CapsuleCollider>();
         currentSpeed = baseSpeed;
         currentNumberOfAirJump = numberOfAirJump;
@@ -167,7 +173,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (!unlockedDash || !canDash) return;
-
+            audioSource.clip = dashSound;
+            audioSource.Play();
             dashed = true;
 
         }
@@ -331,8 +338,23 @@ public class PlayerController : MonoBehaviour
         bool canJump = touchingGround || coyoteTimer > 0f || currentNumberOfAirJump > 0;
         if (jumpBufferTimer > 0f && canJump)
         {
-            if (!touchingGround && coyoteTimer > 0f) coyoteTimer = 0f;
-            else if (!touchingGround) currentNumberOfAirJump--;
+            if(touchingGround)
+            {
+                audioSource.clip = jumpSound;
+                audioSource.Play();
+            }
+            else if (!touchingGround && coyoteTimer > 0f)
+            {
+                coyoteTimer = 0f;
+                audioSource.clip = jumpSound;
+                audioSource.Play();
+            }
+            else if (!touchingGround)
+            {
+                currentNumberOfAirJump--;
+                audioSource.clip = doubleJumpSound;
+                audioSource.Play();
+            }
 
             jumpBufferTimer = 0f;
             jumpTimer = 0f;
