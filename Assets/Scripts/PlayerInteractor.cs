@@ -208,6 +208,9 @@ public class PlayerInteractor : MonoBehaviour
                 
                 anim.SetTrigger(interaction.stringArg);
                 break;
+            case InteractionType.playMusic:
+                MusicManager.Instance.PlayMusic(interaction.stringArg);
+                break;
         }
 
         StartCoroutine(InteractionCoroutine());
