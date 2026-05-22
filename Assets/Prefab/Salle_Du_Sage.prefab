@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6710661ac4ae884e825fb0a3f98fe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleMusicTrigger
-  audioSource: {fileID: 0}
   newMusicTrack: {fileID: 8300000, guid: daef73de384c88b4fbddf73ee4e8949c, type: 3}
   fadeDuration: 1.5
   targetTag: Player
@@ -206,7 +205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6710661ac4ae884e825fb0a3f98fe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleMusicTrigger
-  audioSource: {fileID: 0}
   newMusicTrack: {fileID: 8300000, guid: daef73de384c88b4fbddf73ee4e8949c, type: 3}
   fadeDuration: 1.5
   targetTag: Player
@@ -1215,7 +1213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6710661ac4ae884e825fb0a3f98fe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleMusicTrigger
-  audioSource: {fileID: 0}
   newMusicTrack: {fileID: 8300000, guid: daef73de384c88b4fbddf73ee4e8949c, type: 3}
   fadeDuration: 1.5
   targetTag: Player
@@ -2672,7 +2669,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1f65feba04aa16e4cbd3e63b36dac241, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2902,7 +2899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6710661ac4ae884e825fb0a3f98fe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleMusicTrigger
-  audioSource: {fileID: 0}
   newMusicTrack: {fileID: 8300000, guid: daef73de384c88b4fbddf73ee4e8949c, type: 3}
   fadeDuration: 1.5
   targetTag: Player
