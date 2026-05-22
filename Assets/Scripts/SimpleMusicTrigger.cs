@@ -6,7 +6,7 @@ public class SimpleMusicTrigger : MonoBehaviour
     [Header("References")]
     [Tooltip("The AudioSource somewhere in your scene that plays the music.")]
 
-    private AudioSource audioSource;
+    [SerializeField] private AudioSource audioSource;
 
     [Header("Music Settings")]
     [SerializeField] private AudioClip newMusicTrack;
@@ -16,10 +16,6 @@ public class SimpleMusicTrigger : MonoBehaviour
     [SerializeField] private string targetTag = "Player";
 
     private Coroutine _fadeCoroutine;
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
 
     private void OnTriggerEnter(Collider other)
     {
