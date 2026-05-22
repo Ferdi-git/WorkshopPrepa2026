@@ -29,5 +29,6 @@ public enum InteractionType
     killPlayer,
     teleportPlayer,
     unlockCapacity,
-    playAnimation
+    playAnimation,
+    playMusic
 }

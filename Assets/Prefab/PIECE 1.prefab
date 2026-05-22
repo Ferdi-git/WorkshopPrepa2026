@@ -1298,9 +1298,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1845725731350324800}
-  - component: {fileID: 2384102325662490770}
   - component: {fileID: 8506163454026318655}
-  m_Layer: 0
+  - component: {fileID: 2628706068483221769}
+  m_Layer: 3
   m_Name: MusicTriggerer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1322,21 +1322,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1213705232151368219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2384102325662490770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028483421450372362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6710661ac4ae884e825fb0a3f98fe55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimpleMusicTrigger
-  newMusicTrack: {fileID: 8300000, guid: 6d55074b9dfe34b4db3320380c928244, type: 3}
-  fadeDuration: 1.5
-  targetTag: Player
 --- !u!65 &8506163454026318655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1358,6 +1343,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.773005, y: 1, z: 1}
   m_Center: {x: 0.06277776, y: 0, z: 0}
+--- !u!114 &2628706068483221769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028483421450372362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
+  objectName: 
+  interactionID: 0
+  interactions:
+  - requiredObject: 
+    type: 12
+    stringArg: sage
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
+  goAwayAtStart: 0
 --- !u!1 &2317603778385298510
 GameObject:
   m_ObjectHideFlags: 0
