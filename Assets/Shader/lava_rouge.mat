@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Poison
-  m_Shader: {fileID: -6465566751694194690, guid: b693072abb7ad2240a2a1fa7319c490c, type: 3}
+  m_Name: lava_rouge
+  m_Shader: {fileID: -6465566751694194690, guid: 28aef6bf1c6c4a6488dfbdf17f686fb2, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -38,7 +38,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Bloom: 2.44
+    - _Bloom: 10
     - _Float: 0.2
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -46,7 +46,7 @@ Material:
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &4400155520937876069
+--- !u!114 &932864989541161936
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
