@@ -20,10 +20,8 @@ public class MusicManager : MonoBehaviour
             Debug.LogError("Please assign the same number of clips as there are names");
         }
 
-        PlayMusic("");
+        PlayMusic(names[0]);
     }
-
-
 
     public void PlayMusic(string musicName)
     {

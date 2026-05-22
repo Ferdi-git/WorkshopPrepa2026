@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     Vector3 basePlayerPos;
 
+    public string startingHUDElementName;
+
     private void Awake()
     {
         Instance = this;
@@ -26,6 +28,9 @@ public class GameManager : MonoBehaviour
     {
         PlayerInteractor.Instance.Initialize();
         HUD.Instance.Initialize();
+
+        HUD.Instance.DisplayElement(startingHUDElementName);
+        HUD.Instance.waitingToStartFirstMusic = true;
     }
 
     private void Update()

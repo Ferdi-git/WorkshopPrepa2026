@@ -15,6 +15,7 @@ public class HUD : MonoBehaviour
         elements = FindObjectsByType<HUDElement>(FindObjectsSortMode.None);
 
         HideAllElements();
+
     }
 
     [SerializeField] TextMeshProUGUI tm_context;
@@ -22,6 +23,8 @@ public class HUD : MonoBehaviour
     [SerializeField] GameObject backButton;
 
     HUDElement[] elements;
+
+    public bool waitingToStartFirstMusic;
 
     public void DisplayUpdate()
     {
@@ -57,6 +60,12 @@ public class HUD : MonoBehaviour
         }
 
         backButton.SetActive(false);
+
+        if(waitingToStartFirstMusic)
+        {
+            waitingToStartFirstMusic = false;
+            MusicManager.Instance.PlayMusic("ascenceur");
+        }
     }
 
     public bool Displaying()
