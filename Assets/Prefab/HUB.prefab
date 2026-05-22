@@ -10775,7 +10775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6710661ac4ae884e825fb0a3f98fe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleMusicTrigger
-  audioSource: {fileID: 0}
   newMusicTrack: {fileID: 8300000, guid: 6d55074b9dfe34b4db3320380c928244, type: 3}
   fadeDuration: 1.5
   targetTag: Player
@@ -10845,7 +10844,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6710661ac4ae884e825fb0a3f98fe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleMusicTrigger
-  audioSource: {fileID: 0}
   newMusicTrack: {fileID: 8300000, guid: 6d55074b9dfe34b4db3320380c928244, type: 3}
   fadeDuration: 1.5
   targetTag: Player
@@ -12600,7 +12598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6710661ac4ae884e825fb0a3f98fe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleMusicTrigger
-  audioSource: {fileID: 0}
   newMusicTrack: {fileID: 8300000, guid: 6d55074b9dfe34b4db3320380c928244, type: 3}
   fadeDuration: 1.5
   targetTag: Player
@@ -14058,7 +14055,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f0fe7ac45de938844bf5bf3a254be4ea, type: 2}
+  - {fileID: 2100000, guid: a315fb954bfe4824c9b53630847ea309, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15190,7 +15187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6710661ac4ae884e825fb0a3f98fe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleMusicTrigger
-  audioSource: {fileID: 0}
   newMusicTrack: {fileID: 8300000, guid: 6d55074b9dfe34b4db3320380c928244, type: 3}
   fadeDuration: 1.5
   targetTag: Player
