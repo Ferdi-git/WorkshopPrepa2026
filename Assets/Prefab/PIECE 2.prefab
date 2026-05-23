@@ -10127,6 +10127,82 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &3589490645902845426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7231906327010984313}
+  - component: {fileID: 4932810115628772899}
+  - component: {fileID: 4430929104287409236}
+  m_Layer: 3
+  m_Name: MusicTriggerer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7231906327010984313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3589490645902845426}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.16, y: 0.956, z: 49.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3246369152517683534}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4932810115628772899
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3589490645902845426}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.0789993, y: 1.7429641, z: 2.061367}
+  m_Center: {x: -0.16851938, y: 0.37148207, z: 0.5306835}
+--- !u!114 &4430929104287409236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3589490645902845426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
+  objectName: 
+  interactionID: 0
+  interactions:
+  - requiredObject: 
+    type: 12
+    stringArg: rickroll
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
+  goAwayAtStart: 0
 --- !u!1 &3614862769553646827
 GameObject:
   m_ObjectHideFlags: 0
@@ -17874,6 +17950,7 @@ Transform:
   - {fileID: 8591961562261353792}
   - {fileID: 1543334809975258660}
   - {fileID: 3634411948657283892}
+  - {fileID: 7231906327010984313}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5749177655699483155
@@ -25763,27 +25840,39 @@ MonoBehaviour:
     playNextInteractionInstantly: 1
   - requiredObject: 
     type: 3
-    stringArg: tuto double jump
+    stringArg: tuto sprint
     length: 0
     nextInteractionID: 5
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: tuto double jump
+    length: 0
+    nextInteractionID: 6
     playNextInteractionInstantly: 1
   - requiredObject: 
     type: 4
     stringArg: tuto dash
     length: 0
-    nextInteractionID: 6
+    nextInteractionID: 7
     playNextInteractionInstantly: 1
   - requiredObject: 
     type: 3
     stringArg: ryan door 2
     length: 0
-    nextInteractionID: 7
+    nextInteractionID: 8
     playNextInteractionInstantly: 1
   - requiredObject: 
     type: 4
     stringArg: ryan door 3
     length: 0
-    nextInteractionID: 0
+    nextInteractionID: 9
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: TPspawn
+    length: 0
+    nextInteractionID: 9
     playNextInteractionInstantly: 0
   goAwayAtStart: 0
 --- !u!1 &8470346352065791320
