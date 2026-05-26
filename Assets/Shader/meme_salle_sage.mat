@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: meme_hub_salle_1 1
+  m_Name: meme_salle_sage
   m_Shader: {fileID: -6465566751694194690, guid: 84c4a5ae6ae46a14ab556e06c4fc0e0d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -38,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c21adf3341b8eec488d8fee1347e9216, type: 3}
+        m_Texture: {fileID: 2800000, guid: f80b135790c08ae488726666dd905824, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
@@ -59,14 +59,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Metalic: 0
-    - _Offset: -2.01
+    - _Metalic: 1
+    - _Offset: -7.83
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Rotation: 180
+    - _Rotation: 0
     - _Smoothness: 0
-    - _Tiling: -0.93
+    - _Tiling: 0.68
     m_Colors:
-    - _Color: {r: 7.309949, g: 7.309949, b: 7.309949, a: 1}
+    - _Color: {r: 4, g: 4, b: 4, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

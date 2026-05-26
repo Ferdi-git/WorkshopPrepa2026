@@ -1372,7 +1372,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a80f2dbf68b35742a918c8eb4ab5c34, type: 2}
+  - {fileID: 2100000, guid: 7a056660c2d7982428123ef3fe507f61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3208,12 +3208,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
-  objectName: 
+  objectName: zonechecksage
   interactionID: 0
   interactions:
   - requiredObject: 
     type: 12
     stringArg: sage
+    length: 0
+    nextInteractionID: 1
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: Sprint
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
