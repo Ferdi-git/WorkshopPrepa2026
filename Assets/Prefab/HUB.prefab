@@ -8076,7 +8076,7 @@ Transform:
   m_GameObject: {fileID: 2067343703864303711}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.79, y: 1.08, z: 7.84}
+  m_LocalPosition: {x: -10.01, y: 1.3, z: 7.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8115,12 +8115,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
-  objectName: Checkhubspawn
+  objectName: Checkhubspawn2
   interactionID: 0
   interactions:
   - requiredObject: 
     type: 7
-    stringArg: Checkhub1
+    stringArg: Checkhubspawn2
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
@@ -12056,7 +12056,7 @@ MonoBehaviour:
   interactions:
   - requiredObject: 
     type: 7
-    stringArg: Checkhub1
+    stringArg: Checkhubspawn
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
@@ -29650,12 +29650,6 @@ MonoBehaviour:
     stringArg: Sprint
     length: 0
     nextInteractionID: 1
-    playNextInteractionInstantly: 1
-  - requiredObject: 
-    type: 2
-    stringArg: Sprint
-    length: 0
-    nextInteractionID: 2
     playNextInteractionInstantly: 1
   - requiredObject: 
     type: 9
