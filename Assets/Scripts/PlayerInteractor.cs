@@ -188,8 +188,7 @@ public class PlayerInteractor : MonoBehaviour
                 }
                 else if (interaction.stringArg == "67")
                 {
-                    audioSource.clip = sixSevenSound;
-                    audioSource.Play();
+                    PlayerController.Instance.unlocked67 = true;
                 }
                 else
                 {

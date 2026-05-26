@@ -3,10 +3,15 @@ using DG.Tweening.Core.Easing;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance;
+
+    public GameObject FinalVideo;
+    public GameObject MusicManager;
+    public VideoPlayer VideoPlayer;
 
     private void Awake()
     {
@@ -215,8 +220,19 @@ public class PlayerController : MonoBehaviour
         {
             if (!unlocked67) return;
             //Time.timeScale = 0.25f;
-            Camera.main.DOShakePosition(1f,2);
+            Camera.main.DOShakePosition(1f,2).OnComplete(()=> 
+            {
+                if (!FinalVideo.activeInHierarchy)
+                {
+                    FinalVideo.SetActive(true);
+                    VideoPlayer.Play();
+                    MusicManager.SetActive(false);
+                }
+
+            });
             print("SIIIX SEVEEEEN !!!!!!!!");
+
+
         }
     }
 
