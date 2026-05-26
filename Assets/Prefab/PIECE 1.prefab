@@ -2228,7 +2228,7 @@ MonoBehaviour:
     playNextInteractionInstantly: 1
   - requiredObject: 
     type: 3
-    stringArg: TPspawn
+    stringArg: TPspawn2
     length: 0
     nextInteractionID: 5
     playNextInteractionInstantly: 1
