@@ -66,6 +66,7 @@ Material:
     - _Rotation: 0
     - _Smoothness: 0
     - _Tiling: -0.02
-    m_Colors: []
+    m_Colors:
+    - _Color: {r: 32, g: 32, b: 32, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
