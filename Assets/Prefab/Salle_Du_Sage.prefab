@@ -2905,12 +2905,24 @@ MonoBehaviour:
     stringArg: vieux-sage-interaction
     length: 0
     nextInteractionID: 4
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: light door 1
+    length: 0
+    nextInteractionID: 5
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 4
+    stringArg: light door 2
+    length: 0
+    nextInteractionID: 6
     playNextInteractionInstantly: 0
   - requiredObject: 
     type: 5
     stringArg: random
     length: 0
-    nextInteractionID: 4
+    nextInteractionID: 6
     playNextInteractionInstantly: 0
   goAwayAtStart: 1
 --- !u!1 &4961324605347033843
@@ -3134,12 +3146,18 @@ MonoBehaviour:
     stringArg: vieux-sage-interaction
     length: 0
     nextInteractionID: 4
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: light door 3
+    length: 0
+    nextInteractionID: 5
     playNextInteractionInstantly: 0
   - requiredObject: 
     type: 5
     stringArg: random
     length: 0
-    nextInteractionID: 4
+    nextInteractionID: 5
     playNextInteractionInstantly: 0
   goAwayAtStart: 1
 --- !u!1 &6207961588625672920
@@ -4254,12 +4272,24 @@ MonoBehaviour:
     stringArg: vieux-sage-interaction
     length: 0
     nextInteractionID: 4
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 4
+    stringArg: light door 3
+    length: 0
+    nextInteractionID: 5
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: light door 2
+    length: 0
+    nextInteractionID: 6
     playNextInteractionInstantly: 0
   - requiredObject: 
     type: 5
     stringArg: random
     length: 0
-    nextInteractionID: 4
+    nextInteractionID: 6
     playNextInteractionInstantly: 0
   goAwayAtStart: 1
 --- !u!1 &8267300722787530519

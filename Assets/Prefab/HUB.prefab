@@ -1030,6 +1030,7 @@ GameObject:
   - component: {fileID: 7997981619032690007}
   - component: {fileID: 685004791668427281}
   - component: {fileID: 1620490657140400775}
+  - component: {fileID: 86393269405424217}
   m_Layer: 0
   m_Name: SpotLight_LEVEL2
   m_TagString: Untagged
@@ -1146,6 +1147,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &86393269405424217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114941667221121314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46147955e10b8a143ac63af4983994b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
+  objectName: light door 2
+  interactionID: 0
+  interactions: []
+  goAwayAtStart: 1
 --- !u!1 &124822190879986741
 GameObject:
   m_ObjectHideFlags: 0
@@ -5030,6 +5047,7 @@ GameObject:
   - component: {fileID: 6369736989037150115}
   - component: {fileID: 6919663770112716154}
   - component: {fileID: 33306568857433903}
+  - component: {fileID: 1468336610387246480}
   m_Layer: 0
   m_Name: SpotLight_LEVEL1
   m_TagString: Untagged
@@ -5146,6 +5164,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1468336610387246480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277964886594373795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46147955e10b8a143ac63af4983994b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
+  objectName: light door 1
+  interactionID: 0
+  interactions: []
+  goAwayAtStart: 0
 --- !u!1 &1327573428818753353
 GameObject:
   m_ObjectHideFlags: 0
@@ -11927,6 +11961,133 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &3083758095071886638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8194141079875048654}
+  - component: {fileID: 2770467767218168812}
+  - component: {fileID: 4375214707485250788}
+  m_Layer: 0
+  m_Name: SpotLight_MEME10 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8194141079875048654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083758095071886638}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.518581, y: -0.48070133, z: -0.48070145, w: 0.518581}
+  m_LocalPosition: {x: 12.72, y: -7.68, z: 7.44}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 436074162220469804}
+  m_LocalEulerAnglesHint: {x: 4.342, y: -90, z: -90}
+--- !u!108 &2770467767218168812
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083758095071886638}
+  m_Enabled: 1
+  serializedVersion: 12
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 30.02
+  m_Range: 10
+  m_SpotAngle: 46.598606
+  m_InnerSpotAngle: 18.63355
+  m_CookieSize2D: {x: 0.5, y: 0.5}
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!114 &4375214707485250788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083758095071886638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &3092366990481993099
 GameObject:
   m_ObjectHideFlags: 0
@@ -15779,6 +15940,7 @@ GameObject:
   - component: {fileID: 8760299000147490153}
   - component: {fileID: 6488401386908871366}
   - component: {fileID: 6740542833816496731}
+  - component: {fileID: 2029936953389389777}
   m_Layer: 0
   m_Name: SpotLight_LEVEL3
   m_TagString: Untagged
@@ -15895,6 +16057,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &2029936953389389777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050290068035589774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46147955e10b8a143ac63af4983994b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
+  objectName: light door 3
+  interactionID: 0
+  interactions: []
+  goAwayAtStart: 1
 --- !u!1 &4099380025614741003
 GameObject:
   m_ObjectHideFlags: 0
@@ -17675,7 +17853,7 @@ MonoBehaviour:
   interactions:
   - requiredObject: 
     type: 12
-    stringArg: musique ascenseur
+    stringArg: ascenceur
     length: 0
     nextInteractionID: 0
     playNextInteractionInstantly: 0
@@ -24875,6 +25053,7 @@ Transform:
   - {fileID: 7147350779452888059}
   - {fileID: 7883214859515737524}
   - {fileID: 9185337188857128887}
+  - {fileID: 8194141079875048654}
   - {fileID: 3979805877956053261}
   - {fileID: 7618692026400771813}
   - {fileID: 7765707760924323991}
