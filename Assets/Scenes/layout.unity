@@ -14459,6 +14459,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 996738083917347865, guid: e5a46e48a6182ac4996c2ed2a961321a, type: 3}
+      propertyPath: unlocked67
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 996738083917347865, guid: e5a46e48a6182ac4996c2ed2a961321a, type: 3}
       propertyPath: unlockedDash
       value: 1
       objectReference: {fileID: 0}
