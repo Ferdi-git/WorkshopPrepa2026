@@ -8,6 +8,7 @@ public class PlayerInteractor : MonoBehaviour
     public AudioSource audioSource;
 
     public AudioClip[] deathSounds;
+    public AudioClip sixSevenSound;
     private void Awake()
     {
         Instance = this;
@@ -185,13 +186,10 @@ public class PlayerInteractor : MonoBehaviour
                     PlayerController.Instance.unlockedDash = true;
 
                 }
-                else if (interaction.stringArg == "Shield")
-                {
-
-                }
                 else if (interaction.stringArg == "67")
                 {
-
+                    audioSource.clip = sixSevenSound;
+                    audioSource.Play();
                 }
                 else
                 {

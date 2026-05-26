@@ -505,6 +505,82 @@ Transform:
   - {fileID: 91143565903395297}
   m_Father: {fileID: 3246369152517683534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &775855523421884864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8601000452963730666}
+  - component: {fileID: 8173541538786843928}
+  - component: {fileID: 6832538053667874565}
+  m_Layer: 0
+  m_Name: MusicTriggerer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8601000452963730666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775855523421884864}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.1, y: 1.09, z: 50.69}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3246369152517683534}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8173541538786843928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775855523421884864}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1.9097815}
+  m_Center: {x: 0, y: 0, z: -0.45489073}
+--- !u!114 &6832538053667874565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775855523421884864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dedebfca8e28d4d855e959df8d3ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveZone
+  objectName: 
+  interactionID: 0
+  interactions:
+  - requiredObject: 
+    type: 12
+    stringArg: johnny
+    length: 0
+    nextInteractionID: 0
+    playNextInteractionInstantly: 0
+  goAwayAtStart: 0
 --- !u!1 &1026560571666849439
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,23 +749,23 @@ MonoBehaviour:
   - {x: 1.0182126, y: 0.5, z: 0.5000038}
   - {x: 3.3711402, y: 0.5, z: 0.5000038}
   - {x: 3.3711402, y: -0.5, z: 0.5000038}
-  - {x: 3.3711402, y: -0.5, z: -1.5340614}
+  - {x: 3.3711402, y: -0.5, z: -1.7468681}
   - {x: 3.3711402, y: 0.5, z: 0.5000038}
-  - {x: 3.3711402, y: 0.5, z: -1.5340614}
-  - {x: 3.3711402, y: -0.5, z: -1.5340614}
-  - {x: 1.0182126, y: -0.5, z: -1.5340614}
-  - {x: 3.3711402, y: 0.5, z: -1.5340614}
-  - {x: 1.0182126, y: 0.5, z: -1.5340614}
-  - {x: 1.0182126, y: -0.5, z: -1.5340614}
+  - {x: 3.3711402, y: 0.5, z: -1.7468681}
+  - {x: 3.3711402, y: -0.5, z: -1.7468681}
+  - {x: 1.0182126, y: -0.5, z: -1.7468681}
+  - {x: 3.3711402, y: 0.5, z: -1.7468681}
+  - {x: 1.0182126, y: 0.5, z: -1.7468681}
+  - {x: 1.0182126, y: -0.5, z: -1.7468681}
   - {x: 1.0182126, y: -0.5, z: 0.5000038}
-  - {x: 1.0182126, y: 0.5, z: -1.5340614}
+  - {x: 1.0182126, y: 0.5, z: -1.7468681}
   - {x: 1.0182126, y: 0.5, z: 0.5000038}
   - {x: 1.0182126, y: 0.5, z: 0.5000038}
   - {x: 3.3711402, y: 0.5, z: 0.5000038}
-  - {x: 1.0182126, y: 0.5, z: -1.5340614}
-  - {x: 3.3711402, y: 0.5, z: -1.5340614}
-  - {x: 1.0182126, y: -0.5, z: -1.5340614}
-  - {x: 3.3711402, y: -0.5, z: -1.5340614}
+  - {x: 1.0182126, y: 0.5, z: -1.7468681}
+  - {x: 3.3711402, y: 0.5, z: -1.7468681}
+  - {x: 1.0182126, y: -0.5, z: -1.7468681}
+  - {x: 3.3711402, y: -0.5, z: -1.7468681}
   - {x: 1.0182126, y: -0.5, z: 0.5000038}
   - {x: 3.3711402, y: -0.5, z: 0.5000038}
   m_Textures0:
@@ -697,24 +773,24 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: 2.3529277, y: 1}
   - {x: 0, y: 1}
-  - {x: 2.0340652, y: 0}
+  - {x: 2.246872, y: 0}
   - {x: 0, y: 0}
-  - {x: 2.0340652, y: 1}
+  - {x: 2.246872, y: 1}
   - {x: 0, y: 1}
   - {x: 2.3529277, y: 0}
   - {x: 0, y: 0}
   - {x: 2.3529277, y: 1}
   - {x: 0, y: 1}
-  - {x: 2.0340652, y: 0}
+  - {x: 2.246872, y: 0}
   - {x: 0, y: 0}
-  - {x: 2.0340652, y: 1}
+  - {x: 2.246872, y: 1}
   - {x: 0, y: 1}
   - {x: 0, y: 1}
   - {x: 2.3529277, y: 1}
-  - {x: 0, y: -1.0340652}
-  - {x: 2.3529277, y: -1.0340652}
-  - {x: 2.3529277, y: -1.0340652}
-  - {x: 0, y: -1.0340652}
+  - {x: 0, y: -1.246872}
+  - {x: 2.3529277, y: -1.246872}
+  - {x: 2.3529277, y: -1.246872}
+  - {x: 0, y: -1.246872}
   - {x: 2.3529277, y: 1}
   - {x: 0, y: 1}
   m_Textures2: []
@@ -753,7 +829,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5906
+  m_VersionIndex: 6390
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -773,9 +849,9 @@ MonoBehaviour:
   m_Shape:
     rid: 5715988383256543318
   m_ShapeRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_UnmodifiedMeshVersion: 5699
-  m_Size: {x: 2.3529277, y: 1, z: 2.0340652}
-  m_LocalCenter: {x: 2.1946764, y: 0, z: -0.5170288}
+  m_UnmodifiedMeshVersion: 6390
+  m_Size: {x: 2.3529277, y: 1, z: 2.246872}
+  m_LocalCenter: {x: 2.1946764, y: 0, z: -0.62343216}
   references:
     version: 2
     RefIds:
@@ -11269,6 +11345,7 @@ Transform:
   - {fileID: 4589357010311749027}
   - {fileID: 5629442413202057595}
   - {fileID: 7099237087806567391}
+  - {fileID: 8601000452963730666}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5890703179484679517
@@ -18084,6 +18161,12 @@ MonoBehaviour:
   - requiredObject: 
     type: 4
     stringArg: ryan door 67
+    length: 0
+    nextInteractionID: 6
+    playNextInteractionInstantly: 1
+  - requiredObject: 
+    type: 3
+    stringArg: TPspawn
     length: 0
     nextInteractionID: 5
     playNextInteractionInstantly: 1
