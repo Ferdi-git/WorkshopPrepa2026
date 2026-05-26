@@ -232,6 +232,11 @@ public class PlayerInteractor : MonoBehaviour
 
     void EndInteraction()
     {
+        if(interaction == null)
+        {
+            return;
+        }
+
         if(interaction.playNextInteractionInstantly)
         {
             Interact(objectInteracting);
