@@ -20,13 +20,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: meme_hub_salle_1
+  m_Name: meme_hube_smurf
   m_Shader: {fileID: -6465566751694194690, guid: 84c4a5ae6ae46a14ab556e06c4fc0e0d, type: 3}
-  m_Parent: {fileID: 2100000, guid: 7a056660c2d7982428123ef3fe507f61, type: 2}
+  m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -38,16 +38,35 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ee5a2bcdb73a7854cbc2a8a4331f5d39, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9c304c86a84523b4bb81ed1591bea737, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: bc28d1357c1f783499027ed16e5e4198, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _Metalic: 0
-    - _Offset: -2.01
-    - _Rotation: 180
-    - _Tiling: -0.93
+    - _Offset: -2.89
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Rotation: 0
+    - _Smoothness: 0
+    - _Tiling: 0.86
     m_Colors:
-    - _Color: {r: 1.8413876, g: 1.8413876, b: 1.8413876, a: 1}
+    - _Color: {r: 5.6425934, g: 5.6425934, b: 5.6425934, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
